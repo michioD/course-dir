@@ -44,6 +44,10 @@ Candidates:
 - Nonlinear Control
 - Hybrid and Embedded Control Systems
 - Bioinformatics 
+- Optimal Control Theory p1
+- inverse problems p1
+- Matrix Computations for Large-scale Systems p2
+
 
 
 Version 1:
@@ -65,17 +69,6 @@ Y2 fall (4 courses)
 - Project course in data science p1-p2 (not certain) / Project Course in Robotics and Autonomous Systems
 - Reinforcement learning p2 (certain)
 
-
-
-
-
-
-
-
-
-
-
-
 Version 2:
 Y1 fall (4 courses)
 || Probability theory p1 (obligatory)
@@ -95,26 +88,24 @@ Y2 fall (4 courses)
 - Project course in data science p1-p2 (not certain)
 - Reinforcement learning p2 (certain)
 
-
-Version 3:
-
-Y1 fall (4 courses)
+ttmam version 3
+Y1 fall 
 || Probability theory p1 (obligatory)
+- Parallel and distributed computing p1
 - Statistical Machine Learning p2 (certain)
 - Mathematical Systems Theory p2 (certain)
-- Parallel and distributed computing p1
 
-Y1 spring (4 courses)
-- Optimal Control Theory (certain)
-- Artificial Neural Networks and Deep Architectures(certain)
-- Martingale and stochastic integrals (not certain)
-- Matrix Computations for Large-scale Systems
+Y1 spring 
+- Artificial Neural Networks and Deep Architectures p3
+- Martingale and stochastic integrals p3
+- 
+-
 
-Y2 fall (4 courses)
+Y2 fall 
 - Portfolio Theory and Risk Management p1 (certain)
-- Financial Derivatives p1 (not certain)
-- Project course in data science p1-p2 (not certain)
-- Reinforcement learning p2 (certain)
+- Financial Derivatives p1 
+- Project course in data science p1-p2 
+- Reinforcement learning p2 
 
 
 

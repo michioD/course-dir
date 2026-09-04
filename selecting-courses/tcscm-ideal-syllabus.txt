@@ -31,3 +31,69 @@ Candidates:
 - Formal verification
 - Modelling of Dynamical Systems
 - Probabilistic Graphical Models
+
+
+Want to take:
+Artificial Neural Networks and Deep Architectures p1 / p3
+Reinforcement learning p2
+Probabilistic Graphical Models p3 
+advanced machine learning p2 
+
+
+
+Quantum computing version 1
+Y1 Spring
+||  Introduction to High Performance Computing p3
+- 
+-
+-
+
+Y2 Fall
+- 
+- Inverse problems p1
+|| Quantum Computing for Computer Scientists p2
+||  Quantum Neural Networks p2
+
+
+tcscm Data Science Version 1
+Y1 fall
+|| Internet Protocols p1
+|| computer security p1
+|| Advanced algorithms p1-p2
+|| Artificial Intelligence p2
+- p2 ?
+
+Y1 Spring
+|| Probabilistic Graphical Models p3
+- Artificial Neural Networks and Deep Architectures p3 
+|| Deep Learning in Data Science p4
+- Project Course in Robotics and Autonomous Systems p3-p4
+
+Y2 Fall
+|| Project Course in Data Science p1
+- inverse problems p1 or Mathematical Modelling of Biological Systems p1 
+- Matrix Computations for Large-scale Systems p2 or Quantum Computing for Computer Scientists p2  pr Applied GPU Programming
+- Reinforcement learning p2 (certain)
+
+
+tcscm Computational science Version 1
+
+Y1 fall
+|| Internet Protocols p1
+|| computer security p1
+|| Advanced algorithms p1-p2
+|| Artificial Intelligence p2
+- nothing or Reinforcement learning p2 (certain)
+
+Y1 Spring
+|| Methods in Scientific Computing p3
+- Artificial Neural Networks and Deep Architectures p3
+|| Advanced Computation in Fluid Mechanics p4
+- ?
+
+Y2 Fall 
+- Mathematical Modelling of Biological Systems p1-p2 or advanced machine learning p1 
+- ? 
+|| Project Course in Scientific Computing P2
+|| Applied GPU Programming or Computational Methods for Electromagnetics p2
+
