@@ -19,43 +19,21 @@ Y2 Fall
 - ?
 
 Candidates:
-1. Artificial Neural Networks and Deep Architectures
-2. Parallel and Distributed Computing 
-3. Advanced Individual Course in Computational Biology 
-4. Compilers
-5. Mathematical Modelling of Biological Systems
-6. Quantum computing
-7. Methods in scientific computing
-8  Machine Learning, Advanced Course
+- Artificial Neural Networks and Deep Architectures p1/p3
+- Parallel and Distributed Computing p1
+- Advanced Individual Course in Computational Biology  p1-p2 / p3-p4
+- Compilers p2
+- Mathematical Modelling of Biological Systems p1-p2
+- Quantum computing p2
+- Methods in Scientific Computing p3
+- formal methods p1
+- Modelling of Dynamical Systems p1
+- Artificial Neural Networks and Deep Architectures p1 / p3
+- Reinforcement learning p2
+- Probabilistic Graphical Models p3 
+- advanced machine learning p2 
 
-- Formal verification
-- Modelling of Dynamical Systems
-- Probabilistic Graphical Models
-
-
-Want to take:
-Artificial Neural Networks and Deep Architectures p1 / p3
-Reinforcement learning p2
-Probabilistic Graphical Models p3 
-advanced machine learning p2 
-
-
-
-Quantum computing version 1
-Y1 Spring
-||  Introduction to High Performance Computing p3
-- 
--
--
-
-Y2 Fall
-- 
-- Inverse problems p1
-|| Quantum Computing for Computer Scientists p2
-||  Quantum Neural Networks p2
-
-
-tcscm Data Science Version 1
+### tcscm Data Science Version 1 ###
 Y1 fall
 || Internet Protocols p1
 || computer security p1
@@ -76,7 +54,7 @@ Y2 Fall
 - Reinforcement learning p2 (certain)
 
 
-tcscm Computational science Version 1
+### tcscm Computational science Version 1 ###
 
 Y1 fall
 || Internet Protocols p1
@@ -97,3 +75,18 @@ Y2 Fall
 || Project Course in Scientific Computing P2
 || Applied GPU Programming or Computational Methods for Electromagnetics p2
 
+
+Quantum computing version 1
+Y1 Spring
+||  Introduction to High Performance Computing p3
+- 
+-
+-
+
+Y2 Fall
+- 
+- Inverse problems p1
+|| Quantum Computing for Computer Scientists p2
+||  Quantum Neural Networks p2
+
+ 	
