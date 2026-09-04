@@ -1,0 +1,33 @@
+My Ideal Syllabus TCSCM 
+
+Y1 fall
+|| Internet Protocols
+|| computer security
+|| Advanced algorithms
+|| Artificial Intelligence
+
+Y1 Spring
+- Artificial Neural Networks and Deep Architectures
+- Machine Learning, Advanced Course
+- ?
+- ?
+
+Y2 Fall
+- ?
+- ?
+- ?
+- ?
+
+Candidates:
+1. Artificial Neural Networks and Deep Architectures
+2. Parallel and Distributed Computing 
+3. Advanced Individual Course in Computational Biology 
+4. Compilers
+5. Mathematical Modelling of Biological Systems
+6. Quantum computing
+7. Methods in scientific computing
+8  Machine Learning, Advanced Course
+
+- Formal verification
+- Modelling of Dynamical Systems
+- Probabilistic Graphical Models
