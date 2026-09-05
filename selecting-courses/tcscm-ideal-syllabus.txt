@@ -54,26 +54,26 @@ Y2 Fall
 - Reinforcement learning p2 (certain)
 
 
-### tcscm Computational science Version 1 ###
+### tcscm computational science version 1 ###
 
-Y1 fall
-|| Internet Protocols p1
+y1 fall
+|| internet protocols p1
 || computer security p1
-|| Advanced algorithms p1-p2
-|| Artificial Intelligence p2
-- nothing or Reinforcement learning p2 (certain)
+|| advanced algorithms p1-p2
+|| artificial intelligence p2
+- nothing or reinforcement learning p2 (certain)
 
-Y1 Spring
-|| Methods in Scientific Computing p3
-- Artificial Neural Networks and Deep Architectures p3
-|| Advanced Computation in Fluid Mechanics p4
+y1 spring
+|| methods in scientific computing p3
+- artificial neural networks and deep architectures p3
+|| advanced computation in fluid mechanics p4
 - ?
 
-Y2 Fall 
-- Mathematical Modelling of Biological Systems p1-p2 or advanced machine learning p1 
+y2 fall 
+- mathematical modelling of biological systems p1-p2 or advanced machine learning p1 
 - ? 
-|| Project Course in Scientific Computing P2
-|| Applied GPU Programming or Computational Methods for Electromagnetics p2
+|| project course in scientific computing p2
+|| applied gpu programming or computational methods for electromagnetics p2
 
 
 Quantum computing version 1

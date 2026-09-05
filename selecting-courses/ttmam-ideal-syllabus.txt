@@ -88,25 +88,45 @@ Y2 fall (4 courses)
 - Project course in data science p1-p2 (not certain)
 - Reinforcement learning p2 (certain)
 
-ttmam version 3
+
+p1: Formal Methods,parallel and distributed computing p1 / inverse problems p1 / 
+optimal control theory p1 / applied systems engineering / 
+Mathematical Modelling of Biological Systems / ADvanced algos /
+Artificial Neural Networks and Deep Architectures / Project Course in Data Science / 
+Quantum Computing for Computer Scientists / Modern Methods of Statistical Learning / 
+Modelling of Dynamical Systems / 
+
+P2: Matrix Computations for Large-scale Systems/ Statistical Machine Learning / 
+Systems Engineering / Mathematical Systems Theory / Matrix Computations for Large-scale Systems /
+Geometric Robot Learning / Project Course in Scientific Computing/ Machine Learning, Advanced Course/
+Applied GPU Programming/Quantum Neural Networks/Computational Methods for Electromagnetics
+
+P3: Probabilistic Graphical Models /Applied Cryptography/Parallel Computations for Large- Scale Problems
+Project Course in Robotics and Autonomous Systems / Computational Methods for Stochastic Differential Equations and Machine Learning/
+Applied Linear Optimization / Geometric Control Theory /Regression Analysis / game theory /
+Hybrid and Embedded Control Systems
+
+P4: Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science / Financial Mathematics, Basic Course /Time Series Analysis/Applied Nonlinear Optimization
+Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science / Financial Mathematics, Basic Course /Time Series Analysis/Applied Nonlinear Optimization
+
+ttmam version
 Y1 fall 
 || Probability theory p1 (obligatory)
-- Parallel and distributed computing p1
-- Statistical Machine Learning p2 (certain)
-- Mathematical Systems Theory p2 (certain)
+- ? p1
+- ? p2
+- ? p2
 
 Y1 spring 
 - Artificial Neural Networks and Deep Architectures p3
 - Martingale and stochastic integrals p3
-- 
--
+- ? p4
+- ? p4
 
 Y2 fall 
 - Portfolio Theory and Risk Management p1 (certain)
 - Financial Derivatives p1 
-- Project course in data science p1-p2 
 - Reinforcement learning p2 
-
+- ? p2
 
 
 
