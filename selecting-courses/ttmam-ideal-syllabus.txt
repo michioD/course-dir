@@ -1,92 +1,150 @@
-My Ideal Syllabus TTMAM (pick 10 courses)
+My Ideal TTMAM Syllabus — transferable technical moat
 
-Y1 fall (4 courses)
-|| Probability theory
-- ?
-- ?
-- ?
+Objective
 
-Y1 spring (4 courses)
-- Martingale and stochastic integrals
-- Methods in scientific computing
-- ?
-- ?
+Build knowledge that is genuinely expensive to acquire alone: mathematical modelling,
+uncertainty, numerical optimization, feedback systems, and rigorous model evaluation.
+These are useful in robotics, quantitative finance, ML and computational biotech. The
+target is not four shallow specialisations; it is one strong technical foundation with
+finance as an applied proving ground.
 
-Y2 fall (4 courses)
-- Financial Derivatives 
-- Portfolio Theory and Risk Management 
-- Project course in data science
-- ?
+Selection rule
 
+Prefer courses with difficult theory, labs/projects, feedback, or specialised equipment.
+Do not spend scarce credits on tools that can be learned later from documentation. In
+particular, a second generic deep-learning course is lower priority than systems,
+optimization, probability, and a substantial robotics project.
 
+Fixed programme courses
 
-Candidates:
-1. Mathematical Modelling of Biological Systems
-2. Artificial Neural Networks and Deep Architectures
-3. Parallel and Distributed Computing 
-4. Reinforcement learning
-5. Optimal Control Theory 
-6. Mathematical Systems Theory 
-7. Statistical Machine Learning 
-8. Bioinformatics
-9. Matrix Computations for Large-scale Systems 
-- Advanced algorithms
-- Introduction to Robotics
-- Image Analysis and Computer Vision
-- Geometric Robot Learning
-- Foundations of Cryptography
-- Probabilistic Graphical Models
-- Regression Analysis
-- Project Course in Robotics and Autonomous Systems
-\\ Deep Learning in Data Science
-- Advanced topics in deeplearning in biomedical image analysis
-\\ Formal Methods p1
-- Nonlinear Control
-- Hybrid and Embedded Control Systems
-- Bioinformatics 
-- Optimal Control Theory p1
-- inverse problems p1
-- Matrix Computations for Large-scale Systems p2
+- SF2940 Probability Theory, P1, 7.5 hp — mandatory. The common language of risk,
+  Bayesian inference, filtering, RL and stochastic biological models.
+- AK2030 + SA2001, P1, 7.5 hp total — mandatory methodology courses.
 
+The ten elective courses
 
+1. SF2524 Matrix Computations for Large-scale Systems, P2, 7.5 hp
+   Required programme breadth and a durable computational skill: sparse/iterative linear
+   algebra sits underneath simulation, optimisation, computer vision, genomics and large
+   ML systems.
 
-Version 1:
-Y1 fall (4 courses)
-|| Probability theory p1 (obligatory)
-- Mathematical Modeling of Biological Systems p1-p2 (cetain)
-- Mathematical Systems Theory p2 (certain)
-- Statistical Machine Learning p2 (certain)
+2. SF2957 Statistical Machine Learning, P2, 7.5 hp
+   The statistical discipline behind prediction, uncertainty and model evaluation. More
+   transferable than framework-specific ML training.
 
-Y1 spring (4 courses)
-- Optimal Control Theory (certain)
-- Artificial Neural Networks and Deep Architectures(certain)
-- Bioinformatics (not certain)
-- Martingale and stochastic integrals (not certain)
+3. DD2437 Artificial Neural Networks and Deep Architectures, P3, 7.5 hp
+   Keep one modern representation-learning course. Use its work to become fluent in
+   experimental design, training diagnostics and reproducible implementation—not merely
+   a user of a library.
 
-Y2 fall (4 courses)
-- Portfolio Theory and Risk Management p1 (certain)
-- Financial Derivatives p1 (not certain)
-- Project course in data science p1-p2 (not certain) / Project Course in Robotics and Autonomous Systems
-- Reinforcement learning p2 (certain)
+4. SF2812 Applied Linear Optimization, P3, 7.5 hp
+   Learn to formulate and solve constrained allocation and decision problems. It is a
+   practical complement to nonlinear optimization and transfers to portfolios, planning,
+   resource allocation and experimental design.
 
-Version 2:
-Y1 fall (4 courses)
-|| Probability theory p1 (obligatory)
-- Statistical Machine Learning p2 (certain)
-- Mathematical Systems Theory p2 (certain)
-- Inverse problems p1
+5. SF2822 Applied Nonlinear Optimization, P4, 7.5 hp
+   A core optimisation course: constrained problems, Newton/SQP/interior-point methods
+   and modelling judgement. Directly useful for control, portfolio construction, ML and
+   parameter estimation in biological models.
 
-Y1 spring (4 courses)
-- Optimal Control Theory (certain)
-- Artificial Neural Networks and Deep Architectures(certain)
-- Martingale and stochastic integrals (not certain)
-- Matrix Computations for Large-scale Systems
+6. SF2701 Financial Mathematics, Basic Course, P4, 7.5 hp
+   The finance foundation: no-arbitrage modelling, stochastic thinking and derivatives.
+   Together with Portfolio Theory it makes finance a serious second application rather
+   than a superficial career option.
 
-Y2 fall (4 courses)
-- Portfolio Theory and Risk Management p1 (certain)
-- Financial Derivatives p1 (not certain)
-- Project course in data science p1-p2 (not certain)
-- Reinforcement learning p2 (certain)
+7. SF2852 Optimal Control Theory, Y2 P1, 7.5 hp
+   Dynamic programming, HJB, Pontryagin, LQ control, MPC and numerical optimal control.
+   This is the strongest single bridge between robotics, RL, operations research and
+   dynamical biotech models.
+
+8. SF2942 Portfolio Theory and Risk Management, Y2 P1, 7.5 hp
+   Gives the finance proving ground: risk, dependence, optimisation under uncertainty and
+   communicating model limits. It makes the mathematics legible to quant employers.
+
+9. SF2832 Mathematical Systems Theory, Y2 P2, 7.5 hp
+   The structural backbone: state-space models, linear dynamical systems, controllability,
+   observability and signal-system reasoning. It transfers to tracking, time series,
+   stochastic processes and systems biology.
+
+10. EL2805 Reinforcement Learning, Y2 P2, 7.5 hp
+    Take RL after probability, statistical ML, optimisation and control—not as a first
+    exposure. At that point it becomes a rigorous connection between sequential decision
+    making, control and finance rather than a collection of algorithms.
+
+Recommended timetable
+
+Y1 autumn
+
+P1
+- SF2940 Probability Theory (mandatory)
+- AK2030 + SA2001 (mandatory)
+
+P2
+- SF2524 Matrix Computations for Large-scale Systems
+- SF2957 Statistical Machine Learning
+
+Y1 spring
+
+P3
+- DD2437 Artificial Neural Networks and Deep Architectures
+- SF2812 Applied Linear Optimization
+
+P4
+- SF2822 Applied Nonlinear Optimization
+- SF2701 Financial Mathematics, Basic Course
+
+Y2 autumn
+
+P1
+- SF2852 Optimal Control Theory
+- SF2942 Portfolio Theory and Risk Management
+
+P2
+- SF2832 Mathematical Systems Theory
+- EL2805 Reinforcement Learning
+
+Why this is the right shape
+
+- Robotics: numerical linear algebra -> learning -> systems/control -> sequential
+  decision-making. This is the durable mathematical substrate for perception, planning
+  and robot learning.
+- Finance: probability -> statistical learning -> nonlinear optimisation -> portfolio
+  risk; control and RL add sequential-decision depth.
+- ML: linear algebra -> statistical learning -> neural networks -> optimisation -> RL.
+- Biotech: the same pipeline applies to noisy biological data, inverse/state-estimation
+  problems, dynamical models and constrained parameter fitting.
+
+Important checks and substitutions
+
+- This is an academically feasible 90 hp coursework plan: 15 hp fixed courses + ten
+  7.5 hp electives. It does not require an overloaded P1.
+- DD2419 Project Course in Robotics and Autonomous Systems is a very strong practical
+  option, but it requires DD2410 (or an accepted equivalent). TTMAM's mandatory P1 load
+  already occupies 15 hp, while DD2410 is P1. Take DD2419 only if you have the recognised
+  equivalent before the programme, receive a prerequisite exception, or deliberately
+  agree an alternative study plan with the programme director. It cannot be honestly
+  presented as a free add-on to this schedule.
+- DD2603 Geometric Robot Learning is an excellent elective, but it is not in the core ten:
+  it competes in P2 with the compulsory/transferable matrix + statistical-ML foundation
+  and requires completed basic ML. Swap it in only if you already have the ML prerequisite
+  and are deliberately prioritising robot-learning research. The cleanest swap is for
+  DD2437, not for SF2524, SF2957, SF2822, SF2832 or SF2852.
+- EL2320 Applied Estimation is the best robotics/biotech substitute if you decide not to
+  take DD2437. Kalman/particle filtering is more cross-domain and less self-teachable
+  than another deep-learning survey, but it also competes in P2.
+- If biotech becomes a firm target rather than an option, replace SF2942 with DD2435
+  Mathematical Modelling of Biological Systems. Keep SF2942 when finance remains a
+  serious career path.
+
+Deliberately not prioritised
+
+- Quantum computing/neural networks: interesting, but currently much weaker transfer to
+  the four target areas than control, estimation and optimisation.
+- Formal methods, cryptography and parallel computing: valuable specialisations, but they
+  do not beat the selected foundation unless you decide to target safety-critical robotics,
+  security, or HPC systems specifically.
+- Martingales and stochastic integrals: take only if you choose a stochastic-calculus or
+  derivatives-heavy quant thesis. Portfolio/risk is the better broad finance course.
 
 
 p1: Formal Methods,parallel and distributed computing p1 / inverse problems p1 / 
@@ -106,27 +164,25 @@ Project Course in Robotics and Autonomous Systems / Computational Methods for St
 Applied Linear Optimization / Geometric Control Theory /Regression Analysis / game theory /
 Hybrid and Embedded Control Systems
 
-P4: Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science / Financial Mathematics, Basic Course /Time Series Analysis/Applied Nonlinear Optimization
-Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science / Financial Mathematics, Basic Course /Time Series Analysis/Applied Nonlinear Optimization
+P4: Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science / 
+Financial Mathematics, Basic Course / Time Series Analysis/Applied Nonlinear Optimization /
+Foundations of Cryptography / Control Theory and Practice, Advanced Course
 
 ttmam version
 Y1 fall 
 || Probability theory p1 (obligatory)
-- ? p1
-- ? p2
-- ? p2
+- optimal control theory p1
+- statistical machine learning p2
+- Matrix Computations for Large-scale Systems p2
 
 Y1 spring 
 - Artificial Neural Networks and Deep Architectures p3
 - Martingale and stochastic integrals p3
-- ? p4
-- ? p4
+- time series analysis p4
+- financial mathematics p4
 
 Y2 fall 
 - Portfolio Theory and Risk Management p1 (certain)
-- Financial Derivatives p1 
+- Data science project course p1
 - Reinforcement learning p2 
-- ? p2
-
-
-
+- mathematical systems theory p2
