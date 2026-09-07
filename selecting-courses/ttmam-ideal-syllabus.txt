@@ -186,3 +186,26 @@ Y2 fall
 - Data science project course p1
 - Reinforcement learning p2 
 - mathematical systems theory p2
+
+
+
+### tcscm Data Science Version 1 ###
+Y1 fall
+|| Internet Protocols p1
+|| computer security p1
+|| Advanced algorithms p1-p2
+|| Artificial Intelligence p2
+- p2 ?
+
+
+Y1 Spring
+|| Probabilistic Graphical Models p3
+- Artificial Neural Networks and Deep Architectures p3 
+|| Deep Learning in Data Science p4
+- Project Course in Robotics and Autonomous Systems p3-p4
+
+Y2 Fall
+|| Project Course in Data Science p1
+- inverse problems p1 or Mathematical Modelling of Biological Systems p1 
+- Matrix Computations for Large-scale Systems p2 or Quantum Computing for Computer Scientists p2  pr Applied GPU Programming
+- Reinforcement learning p2 (certain)
