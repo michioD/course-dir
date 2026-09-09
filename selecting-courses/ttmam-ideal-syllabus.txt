@@ -195,17 +195,18 @@ Y1 fall
 || computer security p1
 || Advanced algorithms p1-p2
 || Artificial Intelligence p2
-- p2 ?
+- Matrix Computations for Large-scale Systems P2
 
 
 Y1 Spring
 || Probabilistic Graphical Models p3
 - Artificial Neural Networks and Deep Architectures p3 
 || Deep Learning in Data Science p4
-- Project Course in Robotics and Autonomous Systems p3-p4
+- Control Theory and Practice, Advanced Course p4 or Project Course in Robotics and Autonomous Systems p3-p4
 
 Y2 Fall
 || Project Course in Data Science p1
-- inverse problems p1 or Mathematical Modelling of Biological Systems p1 
-- Matrix Computations for Large-scale Systems p2 or Quantum Computing for Computer Scientists p2  pr Applied GPU Programming
+- Mathematical Modelling of Biological Systems p1 or parallel and distributed computing p1 
+- Quantum Computing for Computer Scientists p2  pr Applied GPU Programming p2 or optimal control theory p1 
 - Reinforcement learning p2 (certain)
+
