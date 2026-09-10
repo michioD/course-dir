@@ -182,27 +182,27 @@ Y1 spring
 - financial mathematics p4
 
 Y2 fall 
-- Portfolio Theory and Risk Management p1 (certain)
+- Portfolio Theory and Risk Management p1 
 - Data science project course p1
 - Reinforcement learning p2 
 - mathematical systems theory p2
 
 
 
-### tcscm Data Science Version 1 ###
+tcscm Data Science Version 1
 Y1 fall
 || Internet Protocols p1
 || computer security p1
 || Advanced algorithms p1-p2
 || Artificial Intelligence p2
-- Matrix Computations for Large-scale Systems P2
+- Matrix Computations for Large-scale Systems p2
 
 
 Y1 Spring
 || Probabilistic Graphical Models p3
 - Artificial Neural Networks and Deep Architectures p3 
 || Deep Learning in Data Science p4
-- Control Theory and Practice, Advanced Course p4 or Project Course in Robotics and Autonomous Systems p3-p4
+- Control Theory and Practice, Advanced Course p4 or Project Course in Robotics and Autonomous Systems p3-p4 or time series analysis p4
 
 Y2 Fall
 || Project Course in Data Science p1
