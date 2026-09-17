@@ -168,7 +168,7 @@ P4: Advanced Computation in Fluid Mechanics p4 / Deep Learning in Data Science /
 Financial Mathematics, Basic Course / Time Series Analysis/Applied Nonlinear Optimization /
 Foundations of Cryptography / Control Theory and Practice, Advanced Course
 
-ttmam version
+ttmam version 1
 Y1 fall 
 || Probability theory p1 (obligatory)
 - optimal control theory p1
@@ -186,6 +186,25 @@ Y2 fall
 - Data science project course p1
 - Reinforcement learning p2
 - mathematical systems theory p2
+
+ttmam version 2
+Y1 fall 
+|| Probability theory p1 (obligatory)
+- optimal control theory p1 x
+- statistical machine learning p2
+- systems engineering p2 x
+
+Y1 spring 
+- Artificial Neural Networks and Deep Architectures p3
+- Martingale and stochastic integrals p3
+- time series analysis p4
+- Applied nonlinear optimization p4 x
+
+Y2 fall
+- parallel and distributed computing p1
+- Geometric robotic learning p1
+- Reinforcement learning p2
+- mathematical systems theory p2 x
 
 
 
