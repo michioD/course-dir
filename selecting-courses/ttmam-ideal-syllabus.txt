@@ -149,10 +149,10 @@ Deliberately not prioritised
 
 p1: Formal Methods,parallel and distributed computing p1 / inverse problems p1 / 
 optimal control theory p1 / applied systems engineering / 
-Mathematical Modelling of Biological Systems / ADvanced algos /
+Mathematical Modelling of Biological Systems / Advanced algos /
 Artificial Neural Networks and Deep Architectures / Project Course in Data Science / 
 Quantum Computing for Computer Scientists / Modern Methods of Statistical Learning / 
-Modelling of Dynamical Systems / 
+Modelling of Dynamical Systems 		
 
 P2: Matrix Computations for Large-scale Systems/ Statistical Machine Learning / 
 Systems Engineering / Mathematical Systems Theory / Matrix Computations for Large-scale Systems /
@@ -173,7 +173,7 @@ Y1 fall
 || Probability theory p1 (obligatory)
 - optimal control theory p1
 - statistical machine learning p2
-- Matrix Computations for Large-scale Systems p2
+- systems engineering p2
 
 Y1 spring 
 - Artificial Neural Networks and Deep Architectures p3
@@ -181,10 +181,10 @@ Y1 spring
 - time series analysis p4
 - financial mathematics p4
 
-Y2 fall 
-- Portfolio Theory and Risk Management p1 
+Y2 fall
+- Portfolio Theory and Risk Management p1
 - Data science project course p1
-- Reinforcement learning p2 
+- Reinforcement learning p2
 - mathematical systems theory p2
 
 
