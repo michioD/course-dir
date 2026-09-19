@@ -148,11 +148,11 @@ Deliberately not prioritised
 
 
 p1: Formal Methods,parallel and distributed computing p1 / inverse problems p1 / 
-optimal control theory p1 / applied systems engineering / 
+optimal control theory p1 / 	 / 
 Mathematical Modelling of Biological Systems / Advanced algos /
 Artificial Neural Networks and Deep Architectures / Project Course in Data Science / 
 Quantum Computing for Computer Scientists / Modern Methods of Statistical Learning / 
-Modelling of Dynamical Systems 		
+Modelling of Dynamical Systems
 
 P2: Matrix Computations for Large-scale Systems/ Statistical Machine Learning / 
 Systems Engineering / Mathematical Systems Theory / Matrix Computations for Large-scale Systems /
@@ -228,4 +228,58 @@ Y2 Fall
 - Mathematical Modelling of Biological Systems p1 or parallel and distributed computing p1 
 - Quantum Computing for Computer Scientists p2  pr Applied GPU Programming p2 or optimal control theory p1 
 - Reinforcement learning p2 (certain)
+
+
+tcscm cognitive systems v2
+- 
+- 
+- 
+
+
+Y1 fall
+|| Internet Protocols p1
+|| computer security p1
+|| Advanced algorithms p1-p2
+|| Artificial Intelligence p2
+- Matrix Computations for Large-scale Systems p2
+
+Y2 spring
+deep learning in data science
+Project course in robotics 
+
+Y3 fall 
+intro to robotics
+Image Analysis and Computer Vision
+
+
+tcscm Data Science Version 3
+Y1 fall
+|| Internet Protocols p1
+|| computer security p1
+|| Advanced algorithms p1-p2
+|| Artificial Intelligence p2
+- Matrix Computations for Large-scale Systems p2
+
+
+Y1 Spring
+|| Probabilistic Graphical Models p3
+- Artificial Neural Networks and Deep Architectures p3 
+|| Deep Learning in Data Science p4
+- time series analysis p4
+
+Y2 Fall
+|| Project Course in Data Science p1
+- parallel and distributed computing p1 
+- mathematical systems theory
+- Reinforcement learning p2 (certain)
+
+
+
+-Internet
+- Parallel and distributed computing
+- Reinforcement learning
+- Statistical machine learning
+- 
+
+
 

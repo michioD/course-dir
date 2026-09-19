@@ -1,0 +1,14 @@
+symmetry_flag
+height_index
+agility_score
+coordination_Y
+diet_signal_2
+diet_signal_1
+limb_ratio_B
+dance_style
+metabolic_balance
+limb_ratio_A
+behavioral_switch
+bone_density
+power_index
+coordination_X
