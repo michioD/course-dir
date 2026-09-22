@@ -1,0 +1,42 @@
+Robotics Ideal Syllabus
+tscrm Learning, Decision and Control Systems version 1
+Y1 fall
+|| Modelling of Dynamical Systems p1 
+|| Introduction to Robotics p1
+-
+
+Y1 spring
+|| Hybrid and Embedded Control Systems p3
+- Project Course in Robotics and Autonomous Systems p3-p4
+|| Control Theory and Practice, Advanced Course p4
+-
+
+Y2 fall
+-
+-
+- Reinforcement learning p2
+- Mathematical Systems Theory p2
+
+tscrm Robotics and Autonomous Systems
+Y1 fall
+|| Modelling of Dynamical Systems p1 
+|| Introduction to Robotics p1
+|| Applied Estimation p2 
+|| Image Analysis and Computer Vision p2
+
+Y1 spring
+- 
+- Project Course in Robotics and Autonomous Systems p3-p4
+|| Control Theory and Practice, Advanced Course p4
+-
+
+Y2 fall
+-
+-
+- Reinforcement learning p2
+- Mathematical Systems Theory p2
+
+Candidates:
+- Model Predictive Control p1
+- Reinforcement learning p2
+- Mathematical Systems Theory p2

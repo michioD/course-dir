@@ -1,0 +1,1176 @@
+Programme syllabus
+An accessible version of the syllabus can be found in the Course and programme directory.
+
+Master's Programme, Applied
+and Computational
+Mathematics 120.0 credits
+Masterprogram, tillämpad matematik och
+beräkningsmatematik
+Valid for students admitted to the education from autumn 26 (HT - Autumn term; VT - Spring term).
+This is a translation of the Swedish, legally binding, programme syllabus.
+
+Programme objectives
+The main objective of this programme is to train skilled applied mathematicians, well prepared for
+advanced industrial positions or continued graduate studies.
+
+Knowledge and understanding
+A Master of Science in Applied and Computational Mathematics shall:
+Programme syllabus for TTMAM batch autumn 26
+
+Page 1 of 8
+
+demonstrate knowledge and understanding in Applied Mathematics, including both broad
+knowledge of the field and a considerable degree of specialised knowledge within the chosen
+area of specializationas well as insight into current research and development work,
+demonstrate specialised methodological knowledge in Applied Mathematics, including
+techniques of mathematical mo- delling, analysis of mathematical models, and simulation.
+be able to formulate and approach new problem settings in a scientific manner, by having a
+creative, critical and systematic attitude towards applied mathematics.
+
+Skills and abilities
+A Master of Science in Applied and Computational Mathematics shall be able to:
+demonstrate the ability to critically and systematically integrate knowledge and analyse, assess
+and deal with complex phenomena, issues and situations even with limited information,
+demonstrate the ability to identify and formulate issues critically, autonomously and creatively
+as well as to plan and, using appropriate methods, undertake advanced tasks within
+predetermined time frames and so contribute to the formation of knowledge as well as the
+ability to evaluate this work,
+demonstrate the ability in speech and writing both nationally and internationally to clearly
+report and discuss his or her conclusions and the knowledge and arguments on which they are
+based in dialogue with different audiences,
+demonstrate the skills required for participation in research and development work or
+autonomous employment in some other qualified capacity,
+independently apply mathematical theories, methods, and models,
+formulate mathematical models, select suitable methods to investigate those models including
+the efficient use of computer tools.
+
+Ability to make judgments and adopt a standpoint
+A Master of Science in Applied and Computational Mathematics shall be able to:
+demonstrate the ability to make assessments in Applied Mathematics informed by relevant
+disciplinary, social and ethical issues and also to demonstrate awareness of ethical aspects of
+research and development work,
+demonstrate insight into the possibilities and limitations of research, its role in society and the
+responsibility of the individual for how it is used,
+critically judge the validity and limitations of results obtained from different types of
+mathematical models,
+Programme syllabus for TTMAM batch autumn 26
+
+Page 2 of 8
+
+demonstrate the ability to identify the personal need for further knowledge and take
+responsibility for his or her ongoing learning.
+
+Extent and content of the programme
+Applied and Computational Mathematics is a two-year (120 university credits) Master’s programme
+at the advanced level (second cycle). The instruction language is entirely English. The programme
+consists of a basic curriculum followed by four tracks: (i) computational mathematics, (ii)
+optimization and systems theory, (iii) mathematics of data science, and (iv) financial mathematics.
+The courses in the basic curriculum are compulsory and worth 30 university credits. To obtain
+sufficient depth in a track, a student is required to complete courses worth approximately 30
+university credits among the profile courses for the track in question. In addition to these four tracks
+there is a fifth track (v) computer simulations for science and engineering. This track is given
+according to what is stated further in this syllabus. The language of instruction is English. Language
+courses may be given in Swedish, German or Dutch.
+The track CSSE includes compulsory mobility for the students. The track includes three semesters of
+courses followed by the fourth research semester spent on the Master's Thesis (30 ECTS) under the
+supervision of both degree-awarding universities. The joint supervision of the thesis work includes
+the possibility that the topic is selected according to specializations offered by the degree-awarding
+universities individually. As a general rule, students will be admitted to TU Berlin for the 1st year,
+for course work amounting to at least 60 ECTS as outlined in Annex 1. Upon request, students may
+enter KTH or TU Delft for their 1st year of studies (course work amounting to at least 60 ECTS as
+outlined in Annex 1), if approved by the Programme Advisory Group (PAG) and endorsed by the
+said university. Admission for the 2nd year can in this case be either TU Berlin or KTH/TU Delft as
+approved by PAG and endorsed by the university being responsible for admitting the student to the
+2nd year.
+The second year university offers course work (at least 30 ECTS) and supervision of the Master’s
+thesis (30 ECTS) as outlined in Annex 1. This includes a choice of a specialization at the
+chosen university:
+KTH: Biocomputing, bioinformatics, machine learning, computational fluid dynamics, numerical
+linear algebra, computational physics, numerical analysis;
+TU Delft: computational fluid dynamics, numerical linear algebra, high-performance computing,
+data assimilation
+TU Berlin: Optimal Control, Control Theory, Numerical Linear Algebra, Numerical Analysis
+A student may select a specialisation different from the proposals above after a separate application
+and subsequent approval by the programme director.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 3 of 8
+
+Eligibility and selection
+General eligibility requirements
+A completed Bachelor's degree, corresponding to a Swedish Bachelor's degree (180 ECTS), or
+equivalent academic qualifications from an internationally recognised university. Students in
+their final year of undergraduate education may also apply to KTH and if qualified, receive a
+conditional acceptance.
+English language proficiency equivalent to (the Swedish upper secondary school) English
+course B/6. There are different ways to fulfill the English language requirements, see: www.
+kth.se
+Specific eligibility requirements
+A Bachelor´s degree, or equivalent, corresponding to 180 ECTS credits, with courses and/or course
+modules in:
+Mathematics and Programming: equivalent to approximately 45 ECTS credits in total which must
+include courses or course modules on
+partial differential equations
+numerical methods
+mathematical statistics
+programming
+Selection process
+The selection process is based on the following criteria:
+Study results (grades, relevant subjects and English), motivation for studies (motivation letter) and
+prior education. Prior education is evaluated based on the quality and suitability of the subjects that
+are relevant for the applied program. The merit rating is carried out on a scale of 1-75.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 4 of 8
+
+Implementation of the education
+Structure of the education
+The duration of the academic year at KTH is 40 weeks. The academic year is divided into four
+periods. Each period lasts approximately seven weeks with at least 33 days of study. Each period is
+followed by an examination period. In addition to the four regular examination periods, there are four
+re-examination periods: at Christmas, in March, June and August, immediately before the start of the
+academic year. Teaching activities may, if necessary, be scheduled outside the academic year. Details
+about the structure follow the general rules stated by KTH.
+The first year of the track CSSE is carried out at one university and is devoted to the compulsory core
+courses and the preparation courses for the specialization that the student chooses. The choice of
+specialization is done at latest after the first year when moving to the second university. The second
+year is carried out at a different university than the first. The studies comprise specialization courses,
+elective courses and a degree project.
+
+Courses
+The programme is course-based. Lists of courses are included in appendix 1.
+At least 90 university credits worth of courses must be taken. Of these, courses worth 30 credits are
+mandatory for all students of the programme. For each track there is an additional ca 30 credits worth
+of courses that are mandatory for that track. The remaining ca 30 credits are obtained by taking
+optional courses. The optional courses can be chosen freely if they are at the advanced level given by
+the department of mathematics, or if they have a strong connection to applied mathematics. A list of
+such optional courses is included in appendix 1. To some extent, other choices of courses are also
+possible. In particular, upto 15 credits can typically be non-technical ("teknikkomplementära")
+courses.
+Note that the choice of optional courses must always be approved by the programme director.
+
+Grading system
+Courses in the first and the second cycle are graded on a scale from A to F. A-E are passing grades,
+A is the highest grade. The grades pass (P) and fail (F) are used for courses under certain
+circumstances.
+Courses in the first and the second cycle are graded on a scale from A to F. A-E are passing grades,
+A is the highest grade. The grades pass (P) and fail (F) are used for courses under certain
+circumstances.
+The grades pass (P) and fail (F) are used for thesis works.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 5 of 8
+
+Conditions for participation in the programme
+Before the second semester each student must select one of the four tracks: computational
+mathematics, optimization and systems theory, statistical learning and data analytics or financial
+mathematics. At least 45 credits worth of course work must have been finished during the first year
+(including the re-examination period in August) to be allowed to move on to the second year of the
+programme.
+For the track CSSE the student is required to make a course selection for the coming semester. This
+must be done according to the rules of the university where the studies will be carried out. The
+student is responsible for having the recommended prerequisites. In a few courses, the number of
+places is limited and selection, for the students who applied in time, is done according to merits such
+as grades and credits. The selection is done at the course-giving university. For each course, the
+student shall, at the start of course, register for the course according to the rules of the university
+giving the course.For students starting their education from the autumn semester 2018, previous
+promotion requirements have been replaced with special admission requirements to each course.
+Admission requirements are specified in the course syllabus.
+For students starting their education from the autumn semester 2018, previous promotion
+requirements have been replaced with special admission requirements to each course. Admission
+requirements are specified in the course syllabus.
+Course application
+As a student at KTH programmes you have to apply for semester courses. The application is done via
+www.universityadmissions.se
+Course registration
+Students admitted to an educational programme at KTH must register for the courses they intend to
+study. Course registration is required for the examination and means that the student is active.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 6 of 8
+
+Degree project
+A 30-credit Master’s degree project is carried out at the end of the educational programme (usually
+the fourth semester). The purpose of the degree project is to develop the student's ability to perform
+independent project work, as well as to apply and deepen the skills obtained from the courses of the
+programme. The project may be carried out in an academic or industrial environment in Sweden or
+abroad.
+The student must actively search for a suitable degree project; however KTH can provide some
+assistance with information on suitable points of contact. The choice of project must be approved by
+the master thesis responsible for the selected track.
+To be allowed to start a degree project, a student must have accumulated at least 60 credits of the
+total course work, and enough depth within the selected track.
+The degree project is graded with P/F.
+Students within the track CSSE must complete an individual degree project which corresponds to 30
+ECTS credits. In order to start the degree project, at least 60 ECTS credits of the total number of
+course credits must be completed, where 10 ECTS credits are from the student’s specialization. The
+goal with the degree project is that the student shall show the ability to independently carry out a
+degree project by using the knowledge and abilities acquired throughout the programme. The degree
+project is carried out at the university responsible for the student´s second year and is supervised by
+teachers from both universities.
+
+Degree
+A Degree of Master of Science is obtained after completing the degree programme.
+Passing grades in all courses which are included in the student’s study plan are required. The study
+plan must comprise 120 higher education credits which include a degree project consisting of 30
+higher education credits.
+KTH’s local degree ordinance can be found at KTH's website, www.kth.se.
+In order for a student at track CSSE to receive double degrees from both universities, all courses in
+the individual study plan must be passed and the degree project must be deemed as passed by both
+the home and host university. For CSSE students who have studied one of the two years at KTH, it is
+required that the student has fulfilled the degree ordinance and has completed courses comprising 60
+ECTS credits at KTH. The degree project, carried out at the host university, must correspond to 30
+ECTS credits. Students who fulfil all requirements are awarded the Degree of Master of Science.
+Application for degree certificate
+When the studies at KTH are completed the student can apply for a degree certificate. Application is
+done through the “personal menu” at www.kth.se
+Students at the track CSSE can apply for a degree certificate from both the universities where they
+have studied.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 7 of 8
+
+Appendix 1: Course list
+Appendix 2: Specialisations
+
+Programme syllabus for TTMAM batch autumn 26
+
+Page 8 of 8
+
+Appendix 1: Course list
+Master's Programme, Applied and
+Computational Mathematics (TTMAM)
+General Courses
+Study year 1
+Mandatory courses (15.0 credits)
+Course
+code
+AK2030
+SA2001
+SF2940
+
+Course name
+
+Credits
+
+Theory and Methodology of Science (Natural and Technological
+Science)
+Sustainable development and research methodology in
+mathematics
+Probability Theory
+
+Edu. level
+
+Second
+cycle
+Second
+3.0 credits
+cycle
+Second
+7.5 credits
+cycle
+4.5 credits
+
+Conditionally elective courses
+Course code
+SF2812
+SF2524
+SF2527
+SF2832
+SF2863
+
+Course name
+Applied Linear Optimization
+Matrix Computations for Large-scale Systems
+Numerical Methods for Differential Equations I
+Mathematical Systems Theory
+Systems Engineering
+
+Programme syllabus for TTMAM batch autumn 26
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+
+Appendix 1 , Page 1 of 9
+
+Optional courses
+Course code Course name
+DD2356
+Methods in High Performance Computing
+DD2365
+Advanced Computation in Fluid Mechanics
+DD2421
+Machine Learning
+SF1677
+Foundations of Analysis
+SF1678
+Groups and Rings
+SF1691
+Complex Analysis
+SF2526
+Numerical algorithms for data-intensive science
+SF2701
+Financial Mathematics, Basic Course
+SF2822
+Applied Nonlinear Optimization
+SF2842
+Geometric Control Theory
+SF2930
+Regression Analysis
+SF2943
+Time Series Analysis
+SF2955
+Computer Intensive Methods in Mathematical Statistics
+SF2971
+Martingales and Stochastic Integrals
+SG2212
+Computational Fluid Dynamics
+SG2224
+Applied Computational Fluid Dynamics
+DD2601
+Deep Generative Models and Synthesis
+DD2257
+Visualization
+DD2434
+Machine Learning, Advanced Course
+DD2435
+Mathematical Modelling of Biological Systems
+DD2440
+Advanced Algorithms
+SF1811
+Optimization
+SF2852
+Optimal Control Theory
+SF2866
+Applied Systems Engineering
+SF2935
+Modern Methods of Statistical Learning
+SF2942
+Portfolio Theory and Risk Management
+SF2956
+Topological Data Analysis
+SF2975
+Financial Derivatives
+SF2980
+Risk Management
+DD2352
+Algorithms and Complexity
+
+Credits
+Edu. level
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits First cycle
+7.5 credits First cycle
+7.5 credits First cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+5.0 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+9.0 credits Second cycle
+6.0 credits Second cycle
+6.0 credits First cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+
+Supplementary information
+At least one of the conditionally elective courses SF2832, SF2863 and SF2812 among the general
+courses has to be studied, and also minimum one of the courses SF2527 and SF2524.
+The conditionally elective courses can be studied during the first or second year.
+Students from CTMAT who has taken SF1693 cannot take SF2527, and can choose to take SF2524
+or not.
+Mandatory SF2940 can be replaced by SF2944 (note: only one can be taken within the TTMAM
+programme).
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 2 of 9
+
+Study year 2
+Conditionally elective courses
+Course code
+SF2524
+SF2527
+SF2812
+SF2832
+SF2863
+
+Course name
+Matrix Computations for Large-scale Systems
+Numerical Methods for Differential Equations I
+Applied Linear Optimization
+Mathematical Systems Theory
+Systems Engineering
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+
+Optional courses
+Course code Course name
+DD2257
+Visualization
+DD2421
+Machine Learning
+DD2434
+Machine Learning, Advanced Course
+DD2435
+Mathematical Modelling of Biological Systems
+DD2440
+Advanced Algorithms
+DD2445
+Complexity Theory
+SF1811
+Optimization
+SF2565
+Program Construction in C++ for Scientific Computing
+SF2852
+Optimal Control Theory
+SF2866
+Applied Systems Engineering
+SF2935
+Modern Methods of Statistical Learning
+SF2942
+Portfolio Theory and Risk Management
+SF2956
+Topological Data Analysis
+SF2957
+Statistical Machine Learning
+SF2975
+Financial Derivatives
+SF2980
+Risk Management
+DD2601
+Deep Generative Models and Synthesis
+
+Credits
+Edu. level
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+9.0 credits Second cycle
+6.0 credits Second cycle
+7.5 credits Second cycle
+6.0 credits First cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+
+Supplementary information
+At least one of the conditionally elective courses SF2832, SF2863 and SF2812 among the general
+courses has to be studied, and also minimum one of the courses SF2527 and SF2524.
+The conditionally elective courses can be studied during the first or second year.
+Students from CTMAT who has taken SF1693 cannot take SF2527, and can choose to take SF2524
+or not.
+Mandatory SF2940 can be replaced by SF2944 (note: only one can be taken within the TTMAM
+programme).
+
+Track, Computational Mathematics (COMA)
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 3 of 9
+
+Study year 1
+Conditionally elective courses
+Course
+code
+
+Course name
+
+SF2526
+
+Numerical algorithms for data-intensive science
+
+SF2525
+
+Computational Methods for Stochastic Differential Equations and
+Machine Learning
+
+SF2528
+
+Numerical Methods for Differential Equations II
+
+DD2365
+
+Advanced Computation in Fluid Mechanics
+
+Edu.
+level
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Credits
+
+Information regarding conditionally elective courses
+Minimum 4 conditionally elective trackcourses must be studied during year 1 and 2.
+
+Study year 2
+Mandatory courses (30.0 credits)
+Course code Course name
+SF250X
+Degree Project in Scientific Computing, Second Cycle
+
+Credits
+Edu. level
+30.0 credits Second cycle
+
+Conditionally elective courses
+Course code Course name
+SF2524
+Matrix Computations for Large-scale Systems
+SF2527
+Numerical Methods for Differential Equations I
+SF2529
+Inverse Problems
+SF2565
+Program Construction in C++ for Scientific Computing
+
+Credits
+Edu. level
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+7.5 credits Second cycle
+
+Information regarding conditionally elective courses
+Minimum 4 conditionally elective trackcourses must be studied during year 1 and 2.
+
+Track, Financial Mathematics (FMIA)
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 4 of 9
+
+Study year 1
+Mandatory courses (7.5 credits)
+Course code
+SF2701
+
+Course name
+Financial Mathematics, Basic Course
+
+Credits
+7.5 credits
+
+Edu. level
+Second cycle
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+
+Conditionally elective courses
+Course code
+SF2930
+SF2971
+SF2943
+
+Course name
+Regression Analysis
+Martingales and Stochastic Integrals
+Time Series Analysis
+
+Information regarding conditionally elective courses
+At least two conditionally elective courses has to be studied on the track. *One of the conditionally
+elective courses on the track has to be SF2930 or SF2943.
+
+Study year 2
+Mandatory courses (37.5 credits)
+Course code Course name
+SF291X
+Degree Project in Financial Mathematics, Second Cycle
+SF2942
+Portfolio Theory and Risk Management
+
+Credits
+Edu. level
+30.0 credits Second cycle
+7.5 credits Second cycle
+
+Conditionally elective courses
+Course code
+SF2975
+SF2980
+
+Course name
+Financial Derivatives
+Risk Management
+
+Credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+
+Information regarding conditionally elective courses
+At least two conditionally elective courses has to be studied on the track. *One of the conditionally
+elective courses on the track has to be SF2930 or SF2943.
+
+Track, Mathematics of Data Science (DAVE)
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 5 of 9
+
+Study year 1
+Conditionally elective courses
+Course
+code
+
+Course name
+
+SF2526
+
+Numerical algorithms for data-intensive science
+
+SF2930
+
+Regression Analysis
+
+SF2955
+
+Computer Intensive Methods in Mathematical Statistics
+
+SF2525
+
+Computational Methods for Stochastic Differential Equations and
+Machine Learning
+
+SF2943
+
+Time Series Analysis
+
+Edu.
+level
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Credits
+
+Information regarding conditionally elective courses
+One mandatory course within the track (7,5cr) and at least three conditionally elective courses within
+the track (22,5cr) = 30cr.
+
+Study year 2
+Mandatory courses (37.5 credits)
+Course code Course name
+SF290X
+Degree Project in Mathematical Statistics, Second Cycle
+SF2935
+Modern Methods of Statistical Learning
+
+Credits
+Edu. level
+30.0 credits Second cycle
+7.5 credits Second cycle
+
+Conditionally elective courses
+Course code
+SF2529
+SF2956
+SF2957
+
+Course name
+Inverse Problems
+Topological Data Analysis
+Statistical Machine Learning
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+
+Information regarding conditionally elective courses
+One mandatory course within the track (7,5cr) and at least three conditionally elective courses within
+the track (22,5cr) = 30cr.
+
+Track, Optimization and Systems Theory (OPST)
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 6 of 9
+
+Study year 1
+Conditionally elective courses
+Course code
+SF2822
+SF2866
+SF2832
+SF2863
+SF2812
+SF2842
+
+Course name
+Applied Nonlinear Optimization
+Applied Systems Engineering
+Mathematical Systems Theory
+Systems Engineering
+Applied Linear Optimization
+Geometric Control Theory
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+
+Study year 2
+Mandatory courses (30.0 credits)
+Course
+code
+
+Course name
+
+Credits
+
+Edu. level
+
+SF280X
+
+Degree Project in Optimization and Systems Theory, Second
+Cycle
+
+30.0 credits
+
+Second
+cycle
+
+Conditionally elective courses
+Course code
+SF2832
+SF2852
+SF2863
+SF2866
+
+Course name
+Mathematical Systems Theory
+Optimal Control Theory
+Systems Engineering
+Applied Systems Engineering
+
+Credits
+7.5 credits
+7.5 credits
+7.5 credits
+7.5 credits
+
+Edu. level
+Second cycle
+Second cycle
+Second cycle
+Second cycle
+
+Information regarding conditionally elective courses
+At least 30 cr of the conditionally elective courses need to be studied in the field optimization and
+systems theory.
+
+Track, Computer Simulations for Science and Engineering
+(CSSE)
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 7 of 9
+
+Study year 1
+Mandatory courses (22.5 credits)
+Course
+code
+AK2030
+SA2001
+
+Course name
+Theory and Methodology of Science (Natural and Technological
+Science)
+Sustainable development and research methodology in
+mathematics
+
+SF2524
+
+Matrix Computations for Large-scale Systems
+
+SF2940
+
+Probability Theory
+
+Credits
+
+Edu. level
+
+Second
+cycle
+Second
+3.0 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+4.5 credits
+
+Conditionally elective courses
+Course
+code
+
+Course name
+
+DD2257
+
+Visualization
+
+SF2526
+
+Numerical algorithms for data-intensive science
+
+SF2822
+
+Applied Nonlinear Optimization
+
+SF2525
+
+Computational Methods for Stochastic Differential Equations and
+Machine Learning
+
+Edu.
+level
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Credits
+
+Information regarding conditionally elective courses
+Conditionally elective course shall be chosen after agreement with the director of the programme.
+In the first study year, out of the conditionally elective courses, 3 courses must be selected. In the
+second study year, at least 30 credits out of the conditionally elective courses must be selected.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 1 , Page 8 of 9
+
+Study year 2
+Mandatory courses (30.0 credits)
+Course code Course name
+SF259X
+Degree Project in Scientific Computing, Second Cycle
+
+Credits
+Edu. level
+30.0 credits Second cycle
+
+Conditionally elective courses
+Course
+code
+
+Course name
+
+Credits
+
+AK2030
+
+Theory and Methodology of Science (Natural and Technological
+Science)
+
+4.5 credits
+
+BB2280
+
+Molecular Modeling
+
+CB2442
+
+Bioinformatics
+
+DD2421
+
+Machine Learning
+
+DD2434
+
+Machine Learning, Advanced Course
+
+DD2435
+
+Mathematical Modelling of Biological Systems
+
+SA2001
+
+Sustainable development and research methodology in
+mathematics
+
+SF2524
+
+Matrix Computations for Large-scale Systems
+
+SF2565
+
+Program Construction in C++ for Scientific Computing
+
+SF2832
+
+Mathematical Systems Theory
+
+SF2863
+
+Systems Engineering
+
+SF2935
+
+Modern Methods of Statistical Learning
+
+SF2942
+
+Portfolio Theory and Risk Management
+
+SF2956
+
+Topological Data Analysis
+
+SF2980
+
+Risk Management
+
+SK2532
+
+Biomedicine for Engineers
+
+Programme syllabus for TTMAM batch autumn 26
+
+Edu. level
+
+Second
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+9.0 credits
+cycle
+Second
+3.0 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+Second
+7.5 credits
+cycle
+
+Appendix 1 , Page 9 of 9
+
+Appendix 2: Specialisations
+Master's Programme, Applied and
+Computational Mathematics (TTMAM)
+Track, Computational Mathematics (COMA)
+The field of computer simulations is of great importance for high-tech industry and scientific
+/engineering research, e.g. virtual processing, climate studies, fluid dynamics, advanced materials,
+etc. Thus, Computational Science and Engineering (CSE) is an enabling technology for scientific
+discovery and engineering design. CSE involves mathematical modeling, numerical analysis,
+computer science, high-performance computing and visualization. The remarkable development of
+large scale computing in the last decades has turned CSE into the "third pillar" of science,
+complementing theory and experiment.
+The track Computational Mathematics (COMA) is mainly concerned with the mathematical
+foundations of CSE. However, in this track we will also discuss issues of high-performance
+computing. Given the interdisciplinarity, your final curriculum may vary greatly depending on your
+interests.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 2 , Page 1 of 3
+
+Track, Financial Mathematics (FMIA)
+Financial mathematics is applied mathematics used to analyze and solve problems related to
+financial markets. Any informed market participant would exploit an opportunity to make a profit
+without any risk of loss. This fact is the basis of the theory of arbitrage-free pricing of derivative
+instruments. Arbitrage opportunities exist but are rare. Typically both potential losses and gains need
+to be considered. Hedging and diversification aim at reducing risk. Speculative actions on financial
+markets aim at making profits. Market participants have different views of the future market prices
+and combine their views with current market prices to take actions that aim at managing risk while
+creating opportunities for profits. Portfolio theory and quantitative risk management present theory
+and methods that form the theoretical basis of market participants’ decision making.
+Financial mathematics has received lots of attention from academics and practitioners over the last
+decades and the level of mathematical sophistication has risen substantially. However, a
+mathematical model is at best a simplification of the real world phenomenon that is being modeled,
+and mathematical sophistication can never replace common sense and knowledge of the limitations
+of mathematical modeling.
+
+Track, Mathematics of Data Science (DAVE)
+The technological progress and the increased availability of information contributes to the emergence
+of massive and complex data sets. A variety of scientific fields are contributing to the analysis of
+such data at the interface of mathematics, statistics, optimization and computational methods for
+learning. Optimal decision making under uncertainty based in such circumstances require modelling
+and discovering relevant features in data, optimization of decision policies and model parameters,
+dimension reduction and large scale computations. Data science based on applied mathematics has
+the potential for transformative impact on natural sciences, business and social sciences.
+
+Track, Optimization and Systems Theory (OPST)
+Optimization and Systems Theory is a discipline in applied mathematics primarily devoted to
+methods of optimization, including mathematical programming and optimal control, and systems
+theoretic aspects of control and signal processing. The discipline is also closely related to
+mathematical economics and applied problems in operations research, systems engineering and
+control engineering.
+Master’s education in Optimization and Systems Theory provides knowledge and competence to
+handle various optimization problems, both linear and nonlinear, to build up and analyze
+mathematical models for various engineering systems, and to design optimal algorithms, feedback
+control, and filters and estimators for such systems.
+Optimization and Systems Theory has wide applications in both industry and research. Examples of
+applications include aerospace industry, engineering industry, radiation therapy, robotics,
+telecommunications, and vehicles. Furthermore, many new areas in biology, medicine, energy and
+environment, and information and communications technology require understanding of both
+optimization and system integration.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 2 , Page 2 of 3
+
+Track, Computer Simulations for Science and Engineering
+(CSSE)
+This track CSSE is given in cooperation by three European universities: Royal Institute of
+Technology, KTH (Sweden), Delft University of Technology, TUD (Netherlands), and Technische
+Universität Berlin,TUB (Germany).
+The main objective of CSSE is to train students in Computational Science and Engineering (CSE)
+and to prepare them for international research and development employment in academy, industry,
+and services sector.
+A student of this two-years programme studies during the first year at one of the three universities,
+normally TU Berlin and then continues his/her studies at another university in a different country.
+The COSSE programme offers a number of specialisations within the spearhead competencies of
+each partner university. A student choses his/her specialisation during the second semester and
+continues with courses and the degree project at the other university in this specialisation.
+
+Programme syllabus for TTMAM batch autumn 26
+
+Appendix 2 , Page 3 of 3
+
+

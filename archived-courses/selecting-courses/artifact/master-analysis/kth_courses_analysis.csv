@@ -1,0 +1,37 @@
+Course Code,Course Name,Self-Teachability (1-10),Career Applicability (1-10),Opportunity Leverage (1-10),Knowledge Half-Life (1-10),Practical Skill Density (1-10),Difficulty (1-10),Core Topics,Can be self-studied?,Recommended study strategy
+DA2210,Philosophy of Science and Research Methodology,8,2,2,5,2,4,"Research Ethics, Scientific Method",Yes,Learn independently
+DD2380,Artificial Intelligence,9,6,5,4,5,5,"Search, Heuristics, Logic, Minimax",Yes,Do assignments only
+DD2395,Computer Security,8,9,7,7,7,6,"Threat Modeling, Cryptography, Network Security",Yes,Do assignments only
+DD2440,Advanced Algorithms,7,7,8,9,8,9,"Dynamic Programming, Graph Algos, Complexity",Yes,Invest heavily
+IK2218,Protocols and Principles of the Internet,9,9,6,8,8,6,"TCP/IP, Routing, BGP, Network Arch",Yes,Learn independently
+DD2421,Machine Learning,8,9,9,6,8,7,"Statistical Learning, SVMs, Trees, PCA",Yes,Invest heavily
+DD2424,Deep Learning in Data Science,7,9,10,5,9,8,"Neural Networks, CNNs, RNNs, Backprop",Yes,Invest heavily
+DD2417,Language Engineering,7,8,9,4,8,7,"NLP, Transformers, Text Parsing",Yes,Invest heavily
+DD2477,Search Engines and Information Retrieval Systems,8,7,6,6,7,6,"PageRank, Inverted Indices, TF-IDF",Yes,Do assignments only
+ID2222,Data Mining,8,8,7,6,8,7,"Clustering, Big Data, MapReduce",Yes,Learn independently
+DD2480,Software Engineering Fundamentals,9,9,6,7,8,4,"Agile, Git, CI/CD, Architecture",Yes,Do assignments only
+DD2459,Software Reliability,6,7,7,8,6,8,"Formal Verification, Testing, Fault Tolerance",No,Attend every lecture
+DD2482,Automated Software Testing and DevOps,9,10,8,6,10,5,"Jenkins, Docker, TDD, Deployment",Yes,Invest heavily
+ID2202,Compilers and Execution Environments,5,5,7,9,6,9,"Lexing, Parsing, LLVM, Optimization",No,Attend every lecture
+IK2221,Networked Systems for Machine Learning,6,8,9,5,8,8,"Federated Learning, Distributed Training",No,Invest heavily
+DD2448,Foundations of Cryptography,4,6,8,9,4,10,"Number Theory, RSA, Zero-Knowledge Proofs",No,Attend every lecture
+DD2367,Quantum Computing for Computer Scientists,3,3,10,8,2,10,"Qubits, Shor's Algo, Quantum Gates",No,Attend every lecture
+DD2356,Methods in High Performance Computing,5,7,8,8,8,8,"MPI, OpenMP, Cache Optimization",No,Attend every lecture
+DD2360,Applied GPU Programming,6,8,9,7,9,8,"CUDA, Parallel Algos, Memory Coalescing",Yes,Invest heavily
+SF2940,Probability Theory,6,6,7,10,4,8,"Measure Theory, Random Variables, Distributions",Yes,Learn independently
+SF2812,Applied Linear Optimization,7,7,7,9,7,7,"Simplex, Duality, Network Flows",Yes,Do assignments only
+SF2524,Matrix Computations for Large-scale Systems,5,7,8,9,7,8,"Eigenvalues, Krylov Subspaces, SVD",No,Attend every lecture
+SF2832,Mathematical Systems Theory,4,6,7,9,5,9,"State Space, Controllability, Observability",No,Attend every lecture
+SF2526,Numerical algorithms for data-intensive science,6,8,9,8,8,8,"Randomized Linear Algebra, Tensor Decomp",Yes,Invest heavily
+SF2701,Financial Mathematics: Basic Course,8,7,8,9,6,6,"Black-Scholes, Arbitrage, Options Pricing",Yes,Learn independently
+SF2822,Applied Nonlinear Optimization,5,7,8,9,7,9,"KKT Conditions, Gradient Descent, Newton's Method",No,Invest heavily
+SF2930,Regression Analysis,9,9,7,9,9,5,"Linear Models, ANOVA, Regularization",Yes,Learn independently
+SF2943,Time Series Analysis,8,8,7,9,8,7,"ARIMA, GARCH, Stationarity",Yes,Do assignments only
+SF2971,Martingales and Stochastic Integrals,3,5,7,10,3,10,"Ito Calculus, Brownian Motion, Filtrations",No,Attend every lecture
+DD2601,Deep Generative Models and Synthesis,6,8,10,5,8,9,"VAEs, GANs, Diffusion Models",Yes,Invest heavily
+SF2935,Modern Methods of Statistical Learning,7,9,9,7,8,8,"Ensemble Methods, Splines, Cross-Validation",Yes,Invest heavily
+SF2942,Portfolio Theory and Risk Management,7,8,8,9,7,7,"Markowitz, VaR, Copulas",Yes,Do assignments only
+SF2956,Topological Data Analysis,2,4,8,10,2,10,"Persistent Homology, Simplicial Complexes",No,Attend every lecture
+SF2565,Program Construction in C++ for Scientific Computing,8,8,7,8,9,6,"C++, OOP, Templates, Memory Management",Yes,Learn independently
+SA2001,Sustainable development and research methodology,9,2,1,4,1,3,"ESG, Research Methods, Academic Writing",Yes,Do assignments only
+CB2442,Bioinformatics,7,6,7,6,6,6,"Genomics, Sequence Alignment, Systems Biology",Yes,Do assignments only
