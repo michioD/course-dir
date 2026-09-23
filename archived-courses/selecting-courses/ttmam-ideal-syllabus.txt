@@ -288,18 +288,18 @@ Y2 Fall
 ttmam version final
 Y1 fall 
 || Probability theory p1 (obligatory)
-- optimal control theory p1
+|| obligatory scientific introductory course o1
 - statistical machine learning p2
 - systems engineering p2 x
 
 Y1 spring 
 - Artificial Neural Networks and Deep Architectures p3
-- Advanced course in control
+- Advanced course in control (maybe something else)
 - time series analysis p4
 - Applied nonlinear optimization p4 x
 
 Y2 fall
-- portfolio theory and risk management
-- advanced algorithms
+- optimal control theory p1
+- advanced algorithms p2
 - Reinforcement learning p2
 - mathematical systems theory p2 
