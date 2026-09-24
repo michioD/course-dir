@@ -4,7 +4,7 @@
 
 int main() {
     for (int i=0;i<N;i++) {
-        fork();
+        fork();       
         printf("Hello from process %d\n", getpid());
         fork();
     }

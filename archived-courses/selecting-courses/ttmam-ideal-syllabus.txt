@@ -288,7 +288,7 @@ Y2 Fall
 ttmam version final
 Y1 fall 
 || Probability theory p1 (obligatory)
-|| obligatory scientific introductory course o1
+|| obligatory scientific introductory course p1
 - statistical machine learning p2
 - systems engineering p2 x
 
@@ -300,6 +300,6 @@ Y1 spring
 
 Y2 fall
 - optimal control theory p1
-- advanced algorithms p2
+- parallel and distributed computing
 - Reinforcement learning p2
 - mathematical systems theory p2 
