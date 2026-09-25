@@ -303,3 +303,14 @@ Y2 fall
 - parallel and distributed computing
 - Reinforcement learning p2
 - mathematical systems theory p2 
+
+
+
+
+My knowledge profile:
+
+Distributed systems (get mentored and stress test applications)
+Operating Systems (concurrency and parallelism)
+Internetworking
+Control and systems theory
+ML and statistics suite: RL, DL, time series analysis
