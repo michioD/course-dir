@@ -1,0 +1,159 @@
+import numpy as np
+from scipy.optimize import minimize
+
+def maximize_satisfaction_first_greedy(s, v):
+    """
+    Implements the first greedy algorithm from Problem 2.
+
+    Sort sodas by satisfaction density s_i / v_i, then greedily choose
+    the locally optimal amount of each soda according to
+
+        x_i* = s_i / (2 v_i) - X_{i-1}
+
+    clamped to [0, v_i].
+
+    Parameters
+    ----------
+    s : list[float]
+        Total satisfaction values of the sodas.
+    v : list[float]
+        Volumes of the sodas.
+
+    Returns
+    -------
+    float
+        Maximum satisfaction found by this greedy procedure.
+    """
+
+    sodas = sorted(zip(s, v), key=lambda pair: pair[0] / pair[1], reverse=True)
+
+    X = 0.0          # total volume consumed so far
+    utility = 0.0    # total linear satisfaction before nausea penalty
+    s_max = 0.0
+
+    for s_i, v_i in sodas:
+        density = s_i / v_i
+
+        # First greedy rule from the pseudocode
+        x_star = density / 2.0 - X
+
+        # Clamp to feasible range [0, v_i]
+        x_star = min(v_i, x_star)
+        x_star = max(0.0, x_star)
+
+        # Update consumed volume and linear satisfaction
+        X += x_star
+        utility += x_star * density
+
+        # Total satisfaction after nausea penalty
+        s_curr = utility - X**2
+
+        s_max = max(s_max, s_curr)
+
+    return s_max
+
+def maximize_satisfaction_greedy(s, v):
+    """
+    Computes the maximum satisfaction deterministically using the $O(n \log n)$ 
+    greedy strategy and piecewise interval evaluation.
+    """
+    n = len(s)
+    # Sort sodas by satisfaction density (s_i / v_i) in descending order
+    sodas = sorted(zip(s, v), key=lambda x: x[0] / x[1], reverse=True)
+    
+    s_max = 0.0
+    x_prev = 0.0
+    s_prev = 0.0
+    
+    for s_i, v_i in sodas:
+        d = s_i / v_i
+        # Theoretical optimal total volume where derivative of d*X - X^2 is zero
+        x_star = d / 2.0 
+        
+        # Clamp the unconstrained optimal volume to the valid physical domain for this specific soda
+        x_eval = max(x_prev, min(x_prev + v_i, x_star))
+        
+        # Calculate satisfaction if we stopped exactly at x_eval
+        delta_v = x_eval - x_prev
+        s_curr = s_prev + (delta_v * d) - (x_eval ** 2)
+        
+        # Update global maximum found so far
+        s_max = max(s_max, s_curr)
+        
+        # Shift domain prefix variables for the next soda interval
+        x_prev += v_i
+        s_prev += s_i
+        
+    return s_max
+
+def maximize_satisfaction_analytical(s, v):
+    """
+    Computes the maximum satisfaction numerically using SciPy's continuous 
+    Sequential Least Squares Programming (SLSQP) optimizer to solve the calculus formulation.
+    """
+    s = np.array(s)
+    v = np.array(v)
+    d = s / v
+    
+    # Objective function to MINIMIZE (negative of satisfaction)
+    # f(x) = sum(d_i * x_i) - (sum(x_i))^2
+    def objective(x):
+        total_volume = np.sum(x)
+        linear_benefit = np.sum(d * x)
+        penalty = total_volume ** 2
+        return -(linear_benefit - penalty)
+    
+    # Bounded constraints: 0 <= x_i <= v_i
+    bounds = [(0, v_i) for v_i in v]
+    
+    # Initial guess array of zeros
+    x0 = np.zeros(len(s))
+    
+    # Run the continuous optimizer
+    result = minimize(objective, x0, bounds=bounds, method='SLSQP')
+    
+    # Return the maximum satisfaction (invert the minimized negative value)
+    return -result.fun
+
+def run_tests():
+    test_cases = [
+        # (satisfaction_array, volume_array)
+        ([10, 20, 30], [2, 5, 3]),
+        ([5, 5, 5], [1, 1, 1]),
+        ([100, 10, 1], [10, 10, 10]),
+        ([1, 2, 3, 4], [4, 3, 2, 1]),
+        ([50], [10]), # Test single item
+        ([10, 8, 2], [1, 10, 5]) # Test dynamic optimal stopping mid-soda
+    ]
+    
+    for i, (s, v) in enumerate(test_cases):
+        res_greedy = maximize_satisfaction_greedy(s, v)
+        res_analytical = maximize_satisfaction_analytical(s, v)
+        
+        print(f"Test Case {i+1}: s={s}, v={v}")
+        print(f"  Greedy Alg Output:  {res_greedy:.6f}")
+        print(f"  Calculus/SLSQP Output: {res_analytical:.6f}")
+        print(f"  Match Confirmed:    {np.isclose(res_greedy, res_analytical)}\n")
+
+def run_tests():
+    test_cases = [
+        ([10, 20, 30], [2, 5, 3]),
+        ([5, 5, 5], [1, 1, 1]),
+        ([100, 10, 1], [10, 10, 10]),
+        ([1, 2, 3, 4], [4, 3, 2, 1]),
+        ([50], [10]),
+        ([10, 8, 2], [1, 10, 5])
+    ]
+
+    for i, (s, v) in enumerate(test_cases):
+        res_first_greedy = maximize_satisfaction_first_greedy(s, v)
+        res_analytical = maximize_satisfaction_analytical(s, v)
+
+        print(f"Test Case {i+1}: s={s}, v={v}")
+        print(f"  First Greedy Output: {res_first_greedy:.6f}")
+        print(f"  SLSQP Output:         {res_analytical:.6f}")
+        print(f"  Match Confirmed:      {np.isclose(res_first_greedy, res_analytical)}\n")
+
+if __name__ == "__main__":
+    run_tests()
+

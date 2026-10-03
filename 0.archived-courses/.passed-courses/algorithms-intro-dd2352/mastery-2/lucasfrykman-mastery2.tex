@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\geometry{a4paper, margin=1in}
+
+\title{Mastery Test 2 - Algorithms and Complexity}
+\author{Lucas Frykman}
+\date{}
+
+\begin{document}
+\notag
+
+\maketitle
+
+\section{Problem 1: Course Planning}
+Let $X$ be the Course Planning problem. Let $I_X$ be a YES Instance input to $X$. We'll define it as the tuple 
+$$I_X = (p,n,f,S,D,C,t)$$ where 
+\begin{itemize}
+    \item $p\in \mathbb{N} \text{ number of courses}$ 
+    \item $n\in \mathbb{N} \text{ number of homeworks}$ 
+    \item $f\in \mathbb{N} \text{ daily capacity}$ 
+    \item $S = (s_1...s_n)\in \mathbb{N}^n \text{ start dates}$ 
+    \item $D = (d_1...d_n)\in \mathbb{N}^n \text{ deadline dates}$ 
+    \item $C = (c_1...c_n)\in \{1...p\}^n \text{ mapping of each homework to its course ID}$
+    \item $t \in \mathbb{N}$ is the number of courses that need to be passed
+\end{itemize}
+\subsection{Membership in NP}
+To verify a YES instance $I_X$ we'll first define the certificate tuple $$\varphi_x = (P,\sigma)$$ where
+\begin{itemize}
+    \item $P \subseteq \{1...p\}$ is the proposed set of courses that can be passed 
+    \item $\sigma = (\sigma_i)_{i\in H_P}$ is a schedule mapping $\sigma : H_P \rightarrow \mathbb{N}$ 
+    \item $\sigma_i$ is the day homework $i$ is completed 
+    \item $H_p = \{i\in\{1...n\} : c_i\in P\}$ is the set of homeworks required to pass the courses in $p$.
+\end{itemize}
+Then define the verification function which takes the instance and the certificate as inputs $$V_X(I_X,\varphi_x)$$
+where $V_X = 1$ (0 otherwise) iff the following conditions are met: 
+\begin{enumerate}
+    \item $t \leq |P|$ ensuring we passed t courses
+    \item $s_i \leq \sigma_i \leq d_i$ $\forall i \in H_P$ ensuring all homework is completed in the correct time
+    \item $|\{x \in \sigma : x = k \}| \leq f$ $\forall k\in \operatorname{set}(\sigma)$ ensuring we 
+        do not go over capacity $f$ on each day
+\end{enumerate}
+The third check needs to search through $\sigma$ for every element of $\sigma$ so the \# of checks is $H_P^2 \leq n^2$ 
+i.e $V_X(\cdot)$ runs in $O(n^2)$. Verification runs in polynomial time $\Rightarrow X \in NP$
+\begin{algorithm}
+\caption{Verification Algorithm $V_X(I_X, \varphi_x)$}
+\begin{algorithmic}[1]
+\Require Instance $I_X = (p, n, f, S, D, C, t)$ and Certificate $\varphi_x = (P, \sigma)$
+\State $H_P \gets \{i \in \{1 \dots n\} : c_i \in P\}$
+\If{$t > |P|$}
+    \State \Return $0$ % \Comment{Condition 1: Check if enough courses are passed}
+\EndIf
+\For{\textbf{each} $i \in H_P$}
+    \If{$\sigma_i < s_i$ \textbf{or} $\sigma_i > d_i$}
+        \State \Return $0$ %\Comment{Condition 2: Check if homework is within allowed timeframe}
+    \EndIf
+\EndFor
+\For{\textbf{each} $k \in \text{set}(\sigma)$}
+    \State $count \gets |\{x \in \sigma : x = k\}|$
+    \If{$count > f$}
+        \State \Return $0$ %\Comment{Condition 3: Check if daily capacity is exceeded}
+    \EndIf
+\EndFor
+\State \Return $1$ %\Comment{All verification conditions met}
+\end{algorithmic}
+\end{algorithm}
+% The \textsc{Course Planning} problem is in NP. A certificate consists of a valid schedule of homeworks for a 
+% subset of at least $t$ courses. To verify the certificate in polynomial time, we can simply check 
+% that the subset contains $\ge t$ courses, and iterate through the schedule to ensure that for each chosen course, 
+% all its homeworks are completed between 
+% their respective $s_i$ and $d_i$ (inclusive), and that no day exceeds the capacity $f$. 
+% This validation scans the schedule and takes $O(n)$ time.
+
+\subsection{NP-Hardness Reduction}
+We'll show that $X$ (Course Planning) is NP-hard by reducing a different NP-Complete problem $Y$. We have to show that this
+reduction function $R(\cdot) : I_Y \rightarrow I_X$ runs in polynomial time.
+
+We'll choose Independent Set as problem Y. The YES Instance $I_Y$ will be the following tuple
+$$I_Y = (G,k)$$ made of a graph $G=(V,E)$ and integer $k\in \mathbb{N}$.
+The reduction function's output will need to be in the form of the tuple $$R(I_y) = (p,n,f,S,D,C,t)$$
+Here is my proposal for how to set the values for the output of this function:
+
+\begin{enumerate}
+    \item For simplicity set the daily capacity to $f = 1$
+    \item Make $p = |V|$ courses, each corresponding to a vertex $v \in V$.
+    \item  Set the target number of passed courses to $t = k$.
+    \item Begin with $i\leftarrow 1$ \\ $\forall e = \{v, u\} \in E$: 
+ 
+    \begin{enumerate}
+        \item create unique day $d_e \in \mathbb{N}$  
+        \item Homework $i$ will have course index $c_i = v$, with start date and deadline as $s_i=d_i=d_e$
+        \item Homework $i+1$ will have course index $c_{i+1} = u$, with start date and deadline as $s_{i+1}=d_{i+1}=d_e$
+        \item Insert these values of $c_i,s_i,d_i$ in to $S,D,C$
+        \item increment the homework index $(i\leftarrow i+2)$
+    \end{enumerate}
+    \item The total number of homeworks will be $n = 2|E|$.
+\end{enumerate}
+
+\begin{algorithm}
+\caption{Reduction Algorithm $R(I_Y)$}
+\begin{algorithmic}[1]
+\Require Independent Set Instance $I_Y = (G, k)$ where $G = (V,E)$
+\State $f \gets 1$ %\Comment{Set daily capacity}
+\State $p \gets |V|$ %\Comment{Set number of courses}
+\State $t \gets k$ %\Comment{Set target number of passed courses}
+\State $n \gets 2|E|$ %\Comment{Total number of homeworks}
+\State Initialize $S, D, C$ as empty arrays
+\State $i \gets 1$
+\For{\textbf{each} edge $e = \{u, v\} \in E$}
+    \State Create unique day $d_e \in \mathbb{N}$
+    \State $c_i \gets v$
+    \State $s_i \gets d_e$
+    \State $d_i \gets d_e$
+    \State $c_{i+1} \gets u$
+    \State $s_{i+1} \gets d_e$
+    \State $d_{i+1} \gets d_e$
+    \State Append $(s_i, s_{i+1})$ to $S$
+    \State Append $(d_i, d_{i+1})$ to $D$
+    \State Append $(c_i, c_{i+1})$ to $C$
+    \State $i \gets i + 2$
+\EndFor
+\State \Return $I_X = (p, n, f, S, D, C, t)$
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{Time Complexity of Reduction:}
+In step 1 we needed to iterate through all the vertices to assign course indices ($|V|$ operations required), to then assign the homeworks to each course takes $2|E|$ operations in step 4.
+So in total the reduction $R(\cdot)$ runs in $O(|V| + |E|)$ time which is polynomial.
+
+\subsection{Correctness Proof}
+
+
+\paragraph{($\Rightarrow$) YES instances map to YES instances:}
+Suppose $I_Y = (G,k)$ is a YES instance. This implies $\exists V' \subseteq V$ s.t that $k \leq |V'|$. Which constructs
+the certificate for $Y$ as $\varphi_y = G' = (V', E_{G'})$.
+We can use this to construct a valid certificate $$\varphi_x = (P,\sigma)$$ corresponding to $$I_X = R(I_Y) = (|V|, 2|E|, 1, S,D,C,k)$$ the following way:
+\begin{enumerate}
+    \item Let $P = V'$ which satisifies the first condition $t \leq |V'|$ since $t=k$
+    \item The set of required homework $H_P = \{i \in \{1...n\}: c_i \in P$. For all $i\in H_P$, the schedule must be
+            set to $\sigma_i=d_i$ because $s_i=d_i=d_e$ which satisifies the second condition $s_i \leq \sigma_i \leq d_i$
+    \item Now that we constructed the cert.,  we have to verify the third condition that $f=1$ is not exceeded.
+        By the reduction, each unique day $d_e$ corresponds to one edge $e=(v,u) \in E$. There's only 2 homeworks
+        that can be done on this day and if $v\in V'$ then $u \notin V'$ isn't in the Independent Set. Which garauntees
+        only at most one homework will be completed on any day $d_e$
+\end{enumerate}
+Because all verification conditions are met $I_Y$ is YES instance $\Rightarrow$ $R(I_Y)$ is YES instance. \qed
+% Suppose $G$ has an independent set $V_{ind} \subseteq V$ of size $k$.
+% Osquar decides to pass the courses corresponding to $V_{ind}$. 
+% For any day $d_e$ (which corresponds to an edge $e = \{u, v\}$), 
+% at most one of the endpoints $u$ or $v$ is in $V_{ind} $ 
+% because $V_{ind}$ is an independent set. Therefore, on day $d_e$, Osquar needs to complete at most one homework. 
+% Since the daily capacity is $f = 1$, 
+% he can successfully complete all required homeworks for
+% the courses in $V_{ind}$ and pass exactly $k$ courses.
+
+\paragraph{($\Leftarrow$) YES instances map to YES instances:}
+% Suppose Osquar can pass a set $V_{ind} $ of $t = k$ courses. We must show that $V_{ind} $ forms an independent set
+% in $G$. Assume for the sake of contradiction that $ V_{ind}$ is not an independent set. 
+% Then there exists some edge $e = \{u, v\} \in E$ such that both $u \in V_{ind}$ and $v \in V_{ind} $.
+% By our construction, passing both course $u$ and course $v$ requires completing their respective 
+% homeworks on the exact same day $d_e$. However, this means Osquar must complete 2 homeworks on day $d_e$, 
+% which violates the daily capacity constraint $f = 1$. Thus, no such edge can exist within $V_{ind}$, 
+% proving that $S$ is an independent set of size $k$.
+%
+% Because \textsc{Course Planning} is in NP and NP-hard, it is NP-complete.
+Now we have to prove the other direction that if a valid cert. for $R(I_Y)$ exists that a valid cert. for $I_Y$ exists. \\
+\begin{enumerate}
+    \item Assume $I_X= R(I_Y)$ is a YES instance which implies $\exists \varphi_x=(P,\sigma)$ s.t $V_X(I_X,\varphi_x)=1$ 
+    \item Construct $V' = \{v\in V: v\in P\}$ since each course index is unique to each vertex $\Rightarrow k \leq |V'| = |P|$ (from condition \#1 in the verifier $V_X$)
+    \item Take any 2 distinct vertices $v,u \in V'$ $\Leftrightarrow$ $v,u \in P$
+    \item Note that the homeworks in $v,u$ are present in $H_P$. Lets make an assumption that there exists an edge $\exists e = (v,u) \in E$. 
+    \item This implies that $v,u$ have each have a homework with the same deadline $s_i=d_i=d_e$
+    \item Due to condition \# 3  and because $\varphi_x$ is valid, we know that the \# of completed homeworks don't exceed $f=1$ on any day $\sigma_i$.
+        Statement 4 contradicts this so our assumption must be false.
+    \item This implies that if you select any 2 distinct vertices from $V'$ the edge $e=(v,u)$ does not exist. Thereby $V'$ is by 
+        an independent set. \qed
+\end{enumerate}
+
+\vspace{1cm}
+
+% \section{Problem 2: Program Design}
+%
+% \subsection{Membership in NP}
+% The \textsc{Program Design} problem is in NP. A certificate is a specific assignment of the $n$ courses into $s$ semesters. A deterministic Turing machine can verify this assignment in polynomial time by checking three conditions: (1) there are exactly $s$ semesters, (2) each semester contains exactly $n/s$ courses, and (3) for every course $j$ in semester $m$, all its prerequisites $i$ are assigned to some semester $m' < m$. This takes $O(n^2)$ time.
+%
+% \subsection{NP-Hardness Reduction}
+% We reduce from \textsc{Independent Set}. Finding an independent set of size $k$ in a graph $G = (V, E)$ is mathematically equivalent to finding a clique of size $k$ in the complement graph $\bar{G} = (V, \bar{E})$. We will construct a \textsc{Program Design} instance based on $\bar{G}$ and $k$.
+%
+% \paragraph{Reduction Description:}
+% Given $\bar{G} = (V, \bar{E})$ and integer $k$, we set the number of semesters to $s = 3$. We define target capacities for specific groups of courses:
+% \begin{itemize}
+%     \item $C_1 = k$ (target slots for vertices in Semester 1)
+%     \item $C_2 = |V| - k + \binom{k}{2}$ (target slots for remaining vertices and edges in Semester 2)
+%     \item $C_3 = |\bar{E}| - \binom{k}{2}$ (target slots for remaining edges in Semester 3)
+% \end{itemize}
+% Let $C = \max(C_1, C_2, C_3) + 1$. We set the strict capacity of each of the 3 semesters to exactly $C$. To enforce the specific target slots $C_1, C_2, C_3$ without altering the semester capacity rule, we introduce structural ``dummy'' courses. 
+% The total set of courses ($n = 3C$) is defined as follows:
+%
+% \textbf{1. Graph Courses:}
+% \begin{itemize}
+%     \item \textbf{Vertex Courses:} A course $V_v$ for each $v \in V$. (No prerequisites).
+%     \item \textbf{Edge Courses:} A course $E_e$ for each $e \in \bar{E}$. \textbf{Prerequisites:} For $e = \{u, v\}$, $E_e$ requires both $V_u$ and $V_v$.
+% \end{itemize}
+%
+% \textbf{2. Padding/Structural Dummies:}
+% \begin{itemize}
+%     \item \textbf{Backbone:} Three courses $B_1, B_2, B_3$ with prerequisites $B_1 \to B_2 \to B_3$. This forces $B_i$ into Semester $i$.
+%     \item \textbf{Sem 1 Padding:} $(C - 1 - C_1)$ distinct courses of type $D_1$. \textbf{Prerequisite:} $D_1 \to B_2$. (Forces $D_1$ into Sem 1).
+%     \item \textbf{Sem 2 Padding:} $(C - 1 - C_2)$ distinct courses of type $D_2$. \textbf{Prerequisites:} $B_1 \to D_2$ and $D_2 \to B_3$. (Forces $D_2$ into Sem 2).
+%     \item \textbf{Sem 3 Padding:} $(C - 1 - C_3)$ distinct courses of type $D_3$. \textbf{Prerequisite:} $B_2 \to D_3$. (Forces $D_3$ into Sem 3).
+% \end{itemize}
+%
+% \paragraph{Time Complexity of Reduction:}
+% The numbers $C_1, C_2, C_3, C$ are trivially computable. Generating the $O(C)$ dummy courses and mapping the vertices/edges takes time $O(|V|^2)$, which is strictly polynomial.
+%
+% \subsection{Correctness Proof}
+%
+% \paragraph{Padding Enforcement:}
+% In any valid schedule, $B_1, B_2, B_3$ are locked to Semesters 1, 2, and 3 respectively. The dummy courses are rigidly locked into their designated semesters by their prerequisites relative to the backbone. Subtracting the backbone and dummies from the uniform capacity $C$, we are left with exactly $C_1$ free slots in Sem 1, $C_2$ free slots in Sem 2, and $C_3$ free slots in Sem 3. These free slots must be filled by the Graph Courses ($V$ and $\bar{E}$).
+%
+% \paragraph{($\Rightarrow$) YES instances map to YES instances:}
+% If $G$ has an independent set of size $k$, then $\bar{G}$ has a clique $S \subseteq V$ of size $k$. We construct a valid schedule for the Graph Courses as follows:
+% \begin{itemize}
+%     \item \textbf{Sem 1:} Schedule the $k$ vertices of $S$. This exactly fills the $C_1 = k$ slots.
+%     \item \textbf{Sem 2:} Schedule the remaining $|V| - k$ vertices, and the $\binom{k}{2}$ edges from $\bar{E}$ that are completely induced by $S$. Since the endpoints of these edges are in Sem 1, their prerequisites are satisfied. This takes exactly $|V| - k + \binom{k}{2} = C_2$ slots.
+%     \item \textbf{Sem 3:} Schedule the remaining $|\bar{E}| - \binom{k}{2}$ edges. Since all vertices in $V$ were scheduled in Sem 1 or 2, the prerequisites for these remaining edges are perfectly satisfied. This fills exactly $C_3$ slots.
+% \end{itemize}
+% Thus, a valid program design exists.
+%
+% \paragraph{($\Leftarrow$) NO instances map to NO instances:}
+% Suppose a valid schedule exists. The $C_1 = k$ free slots in Sem 1 can only be filled by Vertex Courses, because all Edge Courses require at least two Vertex Courses to precede them. Thus, exactly $k$ vertices are scheduled in Sem 1. Let this set be $S$.
+%
+% Sem 2 has $C_2 = |V| - k + \binom{k}{2}$ free slots. Let $x$ be the number of Vertex Courses placed in Sem 2, and $y$ be the number of Edge Courses placed in Sem 2, so $x + y = |V| - k + \binom{k}{2}$.
+% Because exactly $k$ vertices are in Sem 1, there are only $|V|-k$ remaining vertices available. Therefore, $x \le |V| - k$, which algebraically forces $y \ge \binom{k}{2}$. 
+%
+% However, any Edge Course scheduled in Sem 2 \textit{must} have both of its endpoint prerequisites met in Sem 1. The vertices in Sem 1 (the set $S$ of size $k$) can induce a maximum of $\binom{k}{2}$ edges. Therefore, $y$ cannot exceed $\binom{k}{2}$. 
+%
+% This establishes that $y = \binom{k}{2}$. The only way $k$ vertices can satisfy the prerequisites for $\binom{k}{2}$ edges is if all possible edges between those $k$ vertices exist in $\bar{G}$. Consequently, $S$ forms a clique of size $k$ in $\bar{G}$, which means $S$ is an independent set of size $k$ in $G$.
+%
+% Because \textsc{Program Design} is in NP and NP-hard, it is NP-complete.
+
+\end{document}

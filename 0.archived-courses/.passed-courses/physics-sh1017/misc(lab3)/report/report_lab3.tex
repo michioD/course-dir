@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Physics lab 3}
+\author{Jonathan Tadesse, Yifan Foenger, Lucas Frykman (Replicated by Gemini CLI)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+We first note that the probability of finding the particle at one of the walls in the box is:
+\[ P = |\psi(0)|^2 = |\psi(1)|^2 = 0, \]
+therefore we have that $\Delta = |\psi(1)| = 0$. We used $N = [10, 100, 1000, 10000]$ mesh points and calculated the corresponding $\Delta$ value for each $j \in N$, when the ground state energy was $E = 0.5\pi^2$. We then plotted $\log(\Delta)$ vs $\log(N)$ and obtained the following figure: The red dotted line represents the theoretical slope of the error and the blue slope represents the $\Delta$ vs $N$ in a loglog plot. The theoretical slope of $\Delta = \text{constant} / N^2$ in a loglog plot would approximately be $\approx -2$, because $\log(\Delta) = \log(k) - 2\log(N)$. Which implies,
+\[ \frac{\log(\Delta)}{\log(N)} = \frac{k}{\log(N)} - 2. \]
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{p1_error.png}
+    \caption{LogLog plot}
+\end{figure}
+
+The plot showed as expected the accuracy $\Delta$ improved as $N \to \infty$ and matched the theoretical slope.
+
+\section{Problem 2}
+We used the binary search algorithm and shoot method with a tolerance of $10^{-9}$, $N=10000$ mesh points, the initial guess $E=0.4\pi^2$ and upper bound $E=20\pi^2$ to calculate the energy eigenvalues for $n=1,2,3,4$ and its corresponding eigenstate. The resulting output gave the following eigenvalue energies for each $n$:
+\begin{align*}
+    n&=1 \text{ with } E = 4.935 \\
+    n&=2 \text{ with } E = 19.739 \\
+    n&=3 \text{ with } E = 44.413 \\
+    n&=4 \text{ with } E = 78.957
+\end{align*}
+As expected the $\psi(1) \approx 0$ for each $n=1,2,3,4$. We also see that the oscillation of the wavefunction $\psi$ increases with larger $n$, which is expected since by Broglies relation we have
+\[ \lambda = \frac{h}{p}. \]
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{p2_eigenstates.png}
+    \caption{Eigenstates and eigenvalue energies for n=1,2,3,4}
+\end{figure}
+
+\section{Problem 3}
+In this case the potential energy is given by $V(x) = \frac{1}{2}x^2$ which gives us the time independent \textbf{Schrödinger equation} as:
+\begin{equation}
+    -\frac{1}{2} \frac{d^2\psi}{dx^2} + \frac{1}{2}x^2\psi = E\psi
+\end{equation}
+(1) can be solved using Hermite polynomials $H$: which yields:
+\[ \psi_n(x) = A_n e^{-x^2/2} H_n(x) \]
+where $A_n$ is a normalization constant. The energy eigenvalues then become $E_n = n + 1/2$. We solved Schrödinger equation numerically (integration numerically) using $N=1000$ mesh points with $dx = \frac{5}{N}$ and calculated the energy eigenvalues for $n=0,1,2,3$ and their corresponding eigenstates. The energy eigenvalues corresponding to $n$ were,
+\begin{align*}
+    n&=0, E_n = 0.5 \\
+    n&=1, E_n = 1.5 \\
+    n&=2, E_n = 2.5 \\
+    n&=3, E_n = 3.5
+\end{align*}
+They match the exact values of $E_n = n + 1/2$.
+Figure 3 displays the plot for the eigenstates $\psi(x)$. We can see that the condition that $\psi(0)=1, \psi'(0)=0$ for $n$ even is satisfied by looking at the slope of $\psi=1$ (the black dotted line). Similarly we see that the condition $\psi(0)=0, \psi'(0)=1$ for $n$ odd is also satisfied by looking at the slope of $\psi=x$ (black dotted line). We see that for $n=0$ in which the Hermite polynomial is $H=1$ we have the Gaussian distribution on $x: [0, \infty)$. In all cases for $n$ however $\psi(x) \to 0$ as $x \to 5$.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{p3_ho.png}
+    \caption{Eigenstates and eigenvalue energies for n=0,1,2,3}
+\end{figure}
+
+\section{Problem 4}
+In this problem, we have an anharmonic potential defined as $V(x) = \frac{x^2}{2} + \frac{x^4}{2}$.
+We implemented the perturbation method, where we calculated the following:
+1. Unperturbed Hamiltonian $H_0$:
+\[ H_0 = -\frac{1}{2}\frac{d^2}{dx^2} + \frac{1}{2}x^2 \]
+Solving for the eigenvalues and eigenstates:
+\[ H_0 \psi_n^{(0)} = E_n^{(0)} \psi_n^{(0)} \]
+2. Perturbation $H_1$:
+\[ H_1 = \frac{x^4}{2} \]
+First-order energy correction:
+\[ E_n^{(1)} = \langle \psi_n^{(0)} | H_1 | \psi_n^{(0)} \rangle \]
+3. Corrected Eigenvalues:
+\[ E_n \approx E_n^{(0)} + E_n^{(1)} \]
+Finally, we plotted the eigenstates computationally. The numerical solver gives the exact numerical eigenvalues:
+\begin{align*}
+    n&=0, E_0 = 0.696 \\
+    n&=1, E_1 = 2.324 \\
+    n&=2, E_2 = 4.328 \\
+    n&=3, E_3 = 6.578
+\end{align*}
+The following figures display the results for $n=0,1,2,3$.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{p4_anharmonic_1.png}
+    \caption{First eigenstate}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{p4_anharmonic_2.png}
+    \caption{Second eigenstate}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{p4_anharmonic_3.png}
+    \caption{Third eigenstate}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{p4_anharmonic_4.png}
+    \caption{Fourth eigenstate}
+\end{figure}
+
+\end{document}

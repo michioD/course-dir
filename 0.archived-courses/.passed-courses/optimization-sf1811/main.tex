@@ -1,0 +1,243 @@
+\documentclass{assignment}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+
+\usepackage{color,soul}
+\usepackage{amsfonts}
+\def\code#1{\texttt{#1}}
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {./images/} }
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{bbm}
+\usepackage{hyperref}
+\usepackage{bookmark} % Required for enhanced bookmarks
+\usepackage{cleveref}
+
+\begin{document}
+
+\assignmentTitle{assets/kth-logo.png}
+{Optimization}
+{Homework 2}
+{SF1811}
+{Lucas Frykman, Jonathan Tadesse}
+{Student personal numbers: 021012-7650, 970729-4311}
+{Student Emails: lfrykman@kth.se, jtadesse@kth.se}
+AI level: 1, LLM (grok) was used in this assignment just for study mode and to do certain tedious tasks unrelated to the the actual solution and thinking behind the assignment. We used it for finding what terminology to use for certain variables (eg: $A$ being called the constraint matrix), how to write some symbols in latex, converted the assignment statement to latex, and a tutorial on how to input arguments in to the \code{linprog} function. \\
+
+A small manufacturing company produces two products, $P_1$ and $P_2$, in two factories, $F_1$ and $F_2$. Each product can be produced in either factory, but with different costs and resource requirements. The products are sold in three regional markets: $M_1$, $M_2$, $M_3$.
+
+The company must decide:
+\begin{itemize}
+    \item how much of each product to produce in each factory, and
+    \item how much to ship from each factory to each market,
+\end{itemize}
+in order to maximize total profit, given production capacities, labor constraints, and market demand.
+
+The following data is available.
+
+\textbf{$\bullet$ Production capacities}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Factory & Max prod. time (h) & Available labor (h) \\
+\midrule
+$F_1$   & 600                & 500                 \\
+$F_2$   & 800                & 700                 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{$\bullet$ Product characteristics}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+Product & Time/unit (h) & Labor/unit (h) & Prod. cost (kr) & Selling price (kr) \\
+\midrule
+$P_1$   & 2             & 1              & 30              & 60                 \\
+$P_2$   & 3             & 2              & 50              & 90                 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{$\bullet$ Transportation cost (kr/unit)}
+
+\begin{center}
+\begin{tabular}{c|ccc}
+\toprule
+From / To & $M_1$ & $M_2$ & $M_3$ \\
+\midrule
+$F_1$     & 4     & 6     & 9     \\
+$F_2$     & 5     & 4     & 7     \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{$\bullet$ Upper bound on sales for each market (units)}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Market & $P_1$ & $P_2$ \\
+\midrule
+$M_1$  & 100   & 120   \\
+$M_2$  & 150   & 100   \\
+$M_3$  & 200   & 150   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Both production and shipment can be made in arbitrary nonnegative quantities, subject to the conditions above. The company may store products that are not shipped at no cost.
+\section{Excercise 2.1}
+Let the following be our decision variables for the LP to maximize profit\\
+\[
+    x_{fp}, \quad f = 1,2, \quad p = 1,2,
+    \]
+    denoting units of product $p$ produced at factory $f$, and
+    \[
+    w_{fpm}, \quad f = 1,2, \quad p = 1,2, \quad m = 1,2,3,
+    \]
+denoting units of product $p$ produced at factory $f$ shipped to market $m$.
+For the max prod time and availible labor constraints we have the following inequalities:
+
+
+\begin{gather*}
+\begin{aligned}
+    2x_{11} + 3x_{12} \leq 600 \\
+    x_{11}+ 2x_{12} \leq 500 \\
+    2x_{21} + 3x_{22} \leq 800 \\
+    x_{21} + 2x_{22} \leq 700
+\end{aligned} \\
+\end{gather*}
+
+and for the constraints on units sold we have the following inequalities:
+
+\begin{gather*}
+\begin{aligned}
+    w_{111} + w_{211} \leq 100 \\
+    w_{112} + w_{212} \leq 150 \\
+    w_{113} + w_{213} \leq 200 \\
+    w_{121} + w_{221} \leq 120 \\
+    w_{122} + w_{222} \leq 100 \\
+    w_{123} + w_{223} \leq 150 
+\end{aligned} \\
+\end{gather*}
+
+and the objective function is the cost function which is what we're trying to minimize
+\begin{gather*}
+\begin{aligned}
+    c^Tx = 
+    4(w_{111} + w_{121}) + 6(w_{112}+w_{122}) \\
+    + 9(w_{113} + w_{123}) + 5(w_{211} + w_{221}) + 4(w_{212} + w_{222}) + 7(w_{213} + w_{223})&\text{ \tiny{(total transport cost)} }\ \\
+    + 30(x_{11}+x_{21})+50(x_{12}+x_{22}) &\text{ \tiny{(total production cost)} }\\
+    - 60 (w_{111} + w_{112} + w_{113} + w_{211} + w_{212} + w_{213})  &\text{ \tiny{(total revenue for P1)}} \\ 
+    - 90 (w_{121} + w_{122} + w_{123} + w_{221} + w_{222} + w_{223}) &\text{ \tiny{(total revenue for P2)}}
+\end{aligned} \\
+\end{gather*}
+
+and we have flow balance constriction where we're allowed to store products but obviously its not possible to ship more than the amount of products we've produced.
+\begin{gather*}
+\begin{aligned}
+        \sum w_{11i} - x_{11}  \leq 0 \\
+        \sum w_{12i} - x_{12} \leq 0\\
+        \sum w_{21i} - x_{21} \leq 0 \\ 
+        \sum w_{22i} - x_{22} \leq 0
+\end{aligned} \\
+\end{gather*}
+
+We'll write our decision variables as a column vector $x\in \mathbb{R}^{16}$which will have the nonnegativity constraint $0\leq x $  
+\begin{gather*}
+\begin{aligned}
+    x = 
+    \begin{pmatrix}
+        w_{111} \\
+        w_{112} \\
+        w_{113} \\
+        w_{121} \\
+        w_{122} \\
+        w_{123} \\
+        w_{211} \\
+        w_{212} \\
+        w_{213} \\
+        w_{221} \\
+        w_{222} \\
+        w_{223} \\
+        x_{11} \\
+        x_{12} \\
+        x_{21} \\
+        x_{22} \\
+\end{pmatrix}
+\end{aligned} \\
+\end{gather*}
+We can aggregate all these inequalities in to one $Ax \leq b$ where $A\in \mathbb{R}^{14\times 16}$ and $b\in \mathbb{R}^{14}$. The bound vector $b$ has its elements in the same order as the RHS of each inequality referenced above.
+We'll populate the $14 \times 16$ constraint matrix $A$ in the code (using symbolic math toolbox we can copy the output of \code{A} and \code{b} and write it here)
+
+$$A = \left(\begin{array}{cccccccccccccccc} 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 3 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 3\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 2\\ 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\ 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & -1 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & -1 \end{array}\right)$$
+$$b = \left(\begin{array}{c} 600\\ 500\\ 800\\ 700\\ 100\\ 150\\ 200\\ 120\\ 100\\ 150\\ 0\\ 0\\ 0\\ 0 \end{array}\right)$$
+$$c^T = \left(\begin{array}{cccccccccccccccc} -56 & -54 & -51 & -86 & -84 & -81 & -55 & -56 & -53 & -85 & -86 & -83 & 30 & 50 & 30 & 50 \end{array}\right)$$
+We thereby formulate the LP as 
+
+
+\begin{alignat*}{2}
+\max        \quad & c^T x \\
+\text{s.t.} \quad & Ax \leq b \\
+                  & x \geq 0
+\end{alignat*}
+
+\newpage
+\section{Exercise 2.2}
+\begin{myBox}[Code solution]
+    \lstinputlisting[language=Matlab,caption=\code{main.m}]{main.m}
+\end{myBox}
+
+\newpage
+
+
+\section{Exercise 2.3}
+\subsection*{Results}
+
+Running \code{main.m} which uses the \code{linprog} function (which uses the dual simplex method) we calculate maximum profit to be \code{17153.3333 kr} \\
+and the optimal decision variables are given by \\
+\code{x=[100,
+     0,
+     0,
+   120,
+    13.333,
+     0,
+     0,
+   150,
+   120,
+     0,
+    86.666,
+     0,
+   100,
+   133.333,
+   270,
+86.666]}
+ 
+So factory 1 and 2 will produce: \\
+\code{F1: 100 P1 products, 133.333 P2 products} \\
+\code{F2: 270 P1 products, 87 P2 products} \\
+
+and for allocations between factories and markets we'll have: \\
+\code{F1->M1: 100 P1 products, 120 P2 products}\\
+\code{F1->M2: 0 P1 products, 13.333 P2 products}\\
+\code{F1->M3: 0 P1 products, 0 P2 products}\\
+\code{F2->M1: 0 P1 products, 0 P2 products}\\
+\code{F2->M2: 150 P1 products, 86.666 P2 products}\\
+\code{F2->M3: 120 P1 products, 0 P2 products} \\
+the constraints active in this solution are given by \\
+\code{F1 uses max 600h of production time and 500h of labor time}\\
+\code{F2 uses max 800h of production time and 700h of labor time}\\
+\code{M1 can sell max 100 P1 and 120 P2}\\
+\code{M2 can sell max 150 P1 and 100 P2}\\
+\code{M3 can sell max 200 P1 and 150 P2}
+\end{document}

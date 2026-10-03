@@ -1,0 +1,24 @@
+Robotics Ideal Syllabus
+
+Y1 fall
+|| Introduction to Robotics (DD2410) 7.5 credits
+|| The Sustainable Systems and Control Engineer (EL2220) 3 credits
+|| Modelling of Dynamical Systems (EL2820) 7.5 credits
+-
+
+Y1 spring
+|| Control Theory and Practice, Advanced Course (EL2520) 7.5 credits
+-
+-
+-
+
+Y2 fall
+-
+-
+-
+-
+
+Candidates:
+
+- Reinforcement learning
+- Mathematical Systems Theory (SF2832) 7.5 credits
