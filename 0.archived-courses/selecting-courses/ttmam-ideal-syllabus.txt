@@ -302,7 +302,7 @@ Y2 fall
 - optimal control theory p1
 - parallel and distributed computing
 - Reinforcement learning p2
-- mathematical systems theory p2 
+- mathematical systems theory p2
 
 
 
