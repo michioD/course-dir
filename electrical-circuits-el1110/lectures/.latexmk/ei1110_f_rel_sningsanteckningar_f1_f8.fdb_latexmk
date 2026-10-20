@@ -1,0 +1,25 @@
+# Fdb version 4
+["pdflatex"] 1792509128.26697 "./ei1110_f_rel_sningsanteckningar_f1_f8.tex" "ei1110_f_rel_sningsanteckningar_f1_f8.pdf" "ei1110_f_rel_sningsanteckningar_f1_f8" 1792509129.98926 2
+  "./ei1110_f_rel_sningsanteckningar_f1_f8.tex" 1792509080.02678 70280 29b66b53aa719650373addd76e404e8f ""
+  ".latexmk/ei1110_f_rel_sningsanteckningar_f1_f8.aux" 1792509120.26663 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
+  "/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls" 1748806692 20144 b966087dda3b194755eb460d32e2ef75 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/base/size11.clo" 1748806692 8464 f339f4d5391fbe0425b2d94c90e6819e ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty" 1759176595 3804 debc05110ffb506cef68ea4e72c7bcee ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty" 1772916678 41904 7711079366884e0d15963c9d40019853 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty" 1748806692 2671 d9941f4bf4750e9b0603c9a2ec54693b ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1761248321 30662 bfd6e864f4ffc5018b0e2b6260c3181c ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty" 1769028462 6558 45786cbbf5684a09ee65aa45a7b367e0 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1761248321 10176 c2fc1c663b3f3899ddac6e6ed3fb1d7e ""
+  "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
+  "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1788117020 3636770 c1e13558c31fec3d9ce9d12c5f0f16ac ""
+  "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
+  "ei1110_f_rel_sningsanteckningar_f1_f8.tex" 1792509080.02678 70280 29b66b53aa719650373addd76e404e8f ""
+  (generated)
+  ".latexmk/ei1110_f_rel_sningsanteckningar_f1_f8.aux"
+  ".latexmk/ei1110_f_rel_sningsanteckningar_f1_f8.log"
+  "ei1110_f_rel_sningsanteckningar_f1_f8.pdf"
+  (rewritten before read)

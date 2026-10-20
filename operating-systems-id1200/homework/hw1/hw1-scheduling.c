@@ -26,6 +26,9 @@ int pick_next() {
         if (threads[i].remaining > 0) {
             // TODO: choose the thread with the highest priority.
             //       break ties by lowest id.
+            if (best == -1 || threads[i].priority < threads[best].priority ||
+                (threads[i].priority == threads[best].priority && i < best)) {
+                best = i;
             }
         }
     }
